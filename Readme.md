@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юрий Комендантский](https://up.htmlacademy.ru/htmlcss/29/user/1517803).
-* Наставник: `Неизвестно`.
+* Наставник: `[Вадим Новаш] (https://htmlacademy.ru/profile/stakeout)`.
 
 ---
 
