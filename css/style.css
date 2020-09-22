@@ -1,255 +1,231 @@
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-
-
-
-
-         :root
-       {  /*index colors*/
-         --basic-white: #FFFFFF;
-         --basic-letters: #333333;
-         --basic-reasons-blue: #81B3D2;
-         --basic-reasons-gray:#EEEEEE;
-         --basic-gray: #766357;
-         --basic-light-blue: #F2F2F2;
-         --basic-light-gray: #A9A9A9;
-         --basic-footer-white:rgba(255, 255, 255, 0.9);
-         --html-academy-color:#231F20;
-         --basic-background-color: #888888;
-         --black:#000000;
-          /*catalog colors*/
-         --line-color: #E5E5E5;
-       }
-       .page-body
-       {
-         font-family: 'PT Sans', sans-serif;
-         text-transform: uppercase;
-         background-color:var(--basic-white);
-       }
-        a
-       {
-         text-decoration: none;
-       }
-
-         img
-       {
-         max-width: 100%;
-         height: auto;
-       }
-         .site-navigation
-       {
-         font-family: 'PT Sans', sans-serif;
-         font-style: normal ;
-         font-size:14px;
-         line-height: 26px ;
-         font-weight: 700;
-         color:var(--black);
-       }
-       .container-Sedona{
-         font-family: 'PT Sans', sans-serif;
-         font-style: normal;
-         font-size: 21px;
-         line-height: 26px;
-         font-weight: 700;
-         text-align: center;
-         color:var(--black);
-       }
-      .container-5-reasons{
-         font-family: 'PT Sans', sans-serif;
-         font-style: normal;
-         font-size: 14px;
-         line-height: 26px;
-         font-weight: 400;
-         text-align: center;
-         color:var(--basic-letters);
-       }
-       .feature-item,.feature-item-inside
-       {
-         font-family: 'PT Sans', sans-serif;
-         font-style: normal;
-         font-size: 21px;
-         line-height: 21px;
-         font-weight: 700;
-         text-align:center;
-         color:var(--black);
-        }
-        .feature-item-1-2
-        {
-        background-color: #81B3D2;
-        color: #FFFFFF;
-        }
-       .number-feature,.feature-description
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--basic-letters);
-       }
-        .number-feature-1-2,.feature-description-1-2{
-        background-color: #81B3D2;
-        color: #FFFFFF;
-       }
-        .feature-description-food
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 21px;
-        line-height: 21px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--basic-letters);
-       }
-        .do-you-like-it
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 30px;
-        line-height: 24px;
-        font-weight: 700;
-        text-align:center;
-        color:var(--black);
-       }
-        .trip-info
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--basic-letters);
-       }
-         .appointment-button
-       {
-        background: #766357;
-        color:var(--basic-white);
-        text-transform: uppercase;
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 21px;
-        line-height: 26px;
-        font-weight: 700;
-        text-align:center;
-
-       }
-         .form-check-in
-       {
-          display:none;
-       }
-       .appointment:hover .form-check-in
-       {
-          display: inline;
-       }
-        .form-check-in label
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 26px;
-        font-weight: 700;
-        text-align:center;
-       }
-        .footer-contacts-phone-button,.visitsedona
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 21px;
-        line-height: 26px;
-        font-weight: 700;
-        text-align:center;
-        color:var(--black);
-       }
-        .footer-social-button
-       {
-        background-color:var(--basic-reasons-blue);
-       }
-        .footer-creator-button
-       {
-        color: var(--html-academy-color);
-       }
-       /*catalog*/
-       .catalog-main-sorting
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 12px;
-        line-height: 18px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--black);
-       }
-       .catalog-main-sorting-item-find
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 21px;
-        line-height: 26px;
-        font-weight: 700;
-        text-align:center;
-        color:var(--black);
-       }
-       .catalog-main-sorting-item
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 12px;
-        line-height: 18px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--black);
-
-       }
-       .catalog-main-sorting-item:hover
-       {
-        color:var(--basic-reasons-blue);
-       }
-       .catalog-main-more-less-a:hover
-       {
-        background-color:var(--basic-reasons-blue);
-       }
-       .catalog-main-list-habitation-h3
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 26px;
-        line-height: 21px;
-        font-weight: 700;
-        text-align:center;
-        color:var(--black);
-       }
-       .catalog-main-list-habitation-p
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--basic-letters);
-       }
-        .catalog-main-list-habitation-a
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--basic-white);
-        background-color:var(--basic-reasons-blue);
-       }
-       .catalog-main-list-habitation-button
-       {
-        font-family: 'PT Sans', sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        text-align:center;
-        color:var(--basic-white);
-        background-color:var(--basic-gray);
-       }
+ :root
+  {  /*index colors*/
+  --basic-white: #FFFFFF;
+  --basic-letters: #333333;
+  --basic-reasons-blue: #81B3D2;
+  --basic-reasons-gray:#EEEEEE;
+  --basic-gray: #766357;
+  --basic-light-blue: #F2F2F2;
+  --basic-light-gray: #A9A9A9;
+  --basic-footer-white:rgba(255, 255, 255, 0.9);
+  --html-academy-color:#231F20;
+  --basic-background-color: #888888;
+  --black:#000000;
+  /*catalog colors*/
+  --line-color: #E5E5E5;
+  }
+ .page
+  {
+    font-family: 'PT Sans', Arial,sans-serif;
+    text-transform: uppercase;
+    background-color:var(--basic-white);
+    font-size:14px;
+    font-weight:400;
+  }
+ a
+  {
+    text-decoration: none;
+  }
+ img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+ .site-navigation
+  {
+    font-style: normal ;
+    font-size: inherit;
+    line-height: 26px ;
+    font-weight: 700;
+    color:var(--black);
+  }
+ .sedona-town{
+    font-style: normal;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color:var(--black);
+  }
+ .five-reasons{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color:var(--basic-letters);
+  }
+ .feature-header,.advantages-item,.advantages-title
+  {
+    font-style: normal;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align:center;
+    color:var(--black);
+   }
+ .features-item,.advantages-description
+  {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--basic-letters);
+  }
+ .advantages-description-food
+  {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--basic-letters);
+  }
+ .bg-blue
+  {
+   background-color: #81B3D2;
+   color: #FFFFFF;
+  }
+ .bg-gray
+  {
+   background-color: #EEEEEE;
+   color:var(--basic-letters);
+  }
+ .appoitment-header
+  {
+   font-style: normal;
+   font-size: 30px;
+   line-height: 24px;
+   font-weight: 700;
+   text-align:center;
+   color:var(--black);
+  }
+ .trip-info
+  {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 24px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--basic-letters);
+  }
+ .appointment-button
+  {
+   background: #766357;
+   color:var(--basic-white);
+   text-transform: uppercase;
+   font-style: normal;
+   font-size: 21px;
+   line-height: 26px;
+   font-weight: 700;
+   text-align:center;
+  }
+ .form-check-in
+  {
+     display:none;
+  }
+ .appointment:hover .form-check-in
+  {
+     display: inline;
+  }
+ .form-check-in label
+  {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 26px;
+   font-weight: 700;
+   text-align:center;
+  }
+ .phone,.hashtag
+  {
+   font-style: normal;
+   font-size: 21px;
+   line-height: 26px;
+   font-weight: 700;
+   text-align:center;
+   color:var(--black);
+  }
+ .social-link
+  {
+   background-color:var(--basic-reasons-blue);
+  }
+ .copyright-link
+  {
+   color: var(--html-academy-color);
+  }
+  /*catalog*/
+ .sorting
+  {
+   font-style: normal;
+   font-size: 12px;
+   line-height: 18px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--black);
+  }
+ .find-item
+  {
+   font-style: normal;
+   font-size: 21px;
+   line-height: 26px;
+   font-weight: 700;
+   text-align:center;
+   color:var(--black);
+  }
+ .sorting-item
+  {
+   font-style: normal;
+   font-size: 12px;
+   line-height: 18px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--black);
+  }
+ .sorting-item:hover
+  {
+   color:var(--basic-reasons-blue);
+  }
+ .item:hover
+  {
+   background-color:var(--basic-reasons-blue);
+  }
+ .result-info,.result-header
+  {
+   font-style: normal;
+   font-size: 26px;
+   line-height: 21px;
+   font-weight: 700;
+   text-align:center;
+   color:var(--black);
+  }
+ .result-housing
+  {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--basic-letters);
+  }
+ .result-link
+  {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--basic-white);
+   background-color:var(--basic-reasons-blue);
+  }
+ .result-submit
+  {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   text-align:center;
+   color:var(--basic-white);
+   background-color:var(--basic-gray);
+  }
 

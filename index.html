@@ -1,17 +1,16 @@
  <!DOCTYPE html>
-   <html class="page" lang="ru">
+   <html lang="ru">
      <head>
        <meta charset="utf-8">
        <title>HTML Academy: Седона</title>
-       <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
        <link href="normalize.css" rel="stylesheet">
        <link href="css\style.css" rel="stylesheet">
      </head>
-     <body class="page-body">
-       <header class="main-header">
-         <nav class="main-navigation">
-           <a><img  class="main-header-logo" src="img/index-logo.svg"  alt="Логотип города Седона"></a>
+     <body class="page">
+       <header class="page-header">
+         <nav class="navigation">
+           <a class="logo"><img   src="img/index-logo.svg"  alt="Логотип города Седона"></a>
            <ul class="site-navigation">
              <li><a href="#!">Информация</a></li>
              <li><a href="#!">Фото и видео</a></li>
@@ -20,61 +19,62 @@
            </ul>
          </nav>
        </header>
-       <main class="container">
+       <main class="page-content">
            <!--  <h2>Отдых в Седоне</h2>-->
-         <section class="container-main-image">
+         <section class="promo">
              <img>
          </section>
-             <p class="container-Sedona"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
-             <p class="container-5-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+             <p class="sedona-town"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+             <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
          <section class="features">
              <ol class="features-list">
-               <li >
-                 <div><h3 class="feature-item feature-item-1-2"> Настоящий городок</h3>
-                      <p class="number-feature number-feature-1-2">№1</p>
-                      <p class="feature-description feature-description-1-2">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+               <li class="features-item bg-blue">
+                 <div class="feature-info"><h3 class="feature-header bg-blue"> Настоящий городок</h3>
+                      <p class="feature-number">№1</p>
+                      <p class="feature-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                  </div>
-                 <div>
+                 <div class="feature-img-wrap">
                  <img>
                  </div>
-                 <ul >
-                   <li class="feature-item-inside">Жильё<p class="feature-description" >Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
-                   <li class="feature-item-inside">Еда<p class="feature-description-food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
-                   <li class="feature-item-inside">Сувениры<p class="feature-description">Не только китайского, но и местного производства!</p></li>
+                 <ul class="advantages-list">
+                   <li class="advantages-item housing"><h3 class="advantages-title">Жильё</h3><p class="advantages-description" >Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
+                   <li class="advantages-item food"><h3 class="advantages-title">Еда</h3><p class="advantages-description-food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
+                   <li class="advantages-item souvenirs"><h3 class="advantages-title">Сувениры</h3><p class="advantages-description">Не только китайского, но и местного производства!</p></li>
                  </ul>
                </li>
-               <li >
-                 <div><h3 class="feature-item feature-item-1-2">Там есть мост дьявола</h3>
-                      <p class="number-feature number-feature-1-2"> №2 </p>
-                      <p class="feature-description feature-description-1-2">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+               <li class="features-item bg-blue">
+                 <div><h3 class="feature-header bg-blue">Там есть мост дьявола</h3>
+                      <p class="feature-number"> №2 </p>
+                      <p class="feature-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                  </div>
-                 <div>
+                 <div class="feature-img-wrap" >
                  <img>
                  </div>
                </li>
-               <li >
-                 <div class="number"><h3 class="feature-item">Небольшая площадь</h3>
-                      <p class="number-feature" >№3</p>
+               <li class="features-item bg-gray" >
+                 <div class="number"><h3 class="feature-header">Небольшая площадь</h3>
+                      <p class="feature-number" >№3</p>
                       <p class="feature-description">Все достопримечательности находятся очень близко</p>
                  </div>
                </li>
-               <li  >
-                 <div><h3 class="feature-item">Красивая дорога</h3>
-                      <p class="number-feature">№4</p>
+               <li class="features-item bg-gray" >
+                 <div><h3 class="feature-header">Красивая дорога</h3>
+                      <p class="feature-number">№4</p>
                       <p class="feature-description">Ехать в седону из лас-вегаса совсем не скучно!</p>
                  </div>
                </li>
-               <li >
-                 <div><h3 class="feature-item">Мало туристов</h3>
-                      <p class="number-feature">№5</p>
+               <li class="features-item bg-gray">
+                 <div><h3 class="feature-header">Мало туристов</h3>
+                      <p class="feature-number">№5</p>
                       <p class="feature-description">Большинство едет в гранд каньон и толпится там</p>
                   </div>
                </li>
              </ol>
          </section>
-           <h2 class="do-you-like-it">Заинтересовались?</h2>
-           <p class="trip-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
          <section class="appointment">
+           <h2 class="appoitment-header">Заинтересовались?</h2>
+           <p class="trip-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+
              <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
                <form  class="form-check-in" method="post">
                    <label >Дата заезда</label>
@@ -86,28 +86,28 @@
          </section>
        </main>
        <footer class="page-footer">
-           <section  class="footer-contacts-phone">
+           <section  class="footer-contacts">
              <h2>Наши контакты</h2>
-               <p class="visitsedona">#visitsedona</p>
-               <a class="footer-contacts-phone-button" href= "tel:+74956660166">+7(495) 666 01 66</a>
+               <p class="hashtag">#visitsedona</p>
+               <a class="phone" href= "tel:+74956660166">+7(495) 666 01 66</a>
            </section>
-           <section class="footer-social">
+           <section class="socials">
              <h2>Мы на связи</h2>
                <ul >
-                 <li class="footer-social-item">
-                   <a class="footer-social-button" href="#!" target="_blank">Вконтакте</a>
+                 <li class="socials-item">
+                   <a class="social-link vk" href="#!" target="_blank">Вконтакте</a>
                  </li>
-                 <li class="footer-social-item">
-                   <a class="footer-social-button" href="#!" target="_blank">Фейсбук</a>
+                 <li class="socials-item">
+                   <a class="social-link f" href="#!" target="_blank">Фейсбук</a>
                  </li>
-                 <li class="footer-social-item">
-                   <a class="footer-social-button" href="#!" target="_blank">Инстаграм</a>
+                 <li class="socials-item">
+                   <a class="social-link inst" href="#!" target="_blank">Инстаграм</a>
                  </li>
                </ul>
            </section>
-           <section class=footer-creator>
+           <section class=copyright>
              <h2>Разработчик</h2>
-             <a class="footer-creator-button" href="https://htmlacademy.ru" target="_blank"> Website by HTML Academy</a>
+             <a class="copyright-link" href="https://htmlacademy.ru" target="_blank"> Website by HTML Academy</a>
            </section>
        </footer>
      </body>
