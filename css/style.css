@@ -134,12 +134,12 @@
   }
   .appointment-button:hover
   {
-    background-color: #604E43;
+    background-color:#604E43;
 
   }
   .appointment-button:active
   {
-    background-color: #503E33;
+    background-color:#503E33;
 
   }
   .form-check-in label
@@ -158,8 +158,8 @@
   }
   .socials-list
   {
-    padding:0;
-    margin:0;
+   padding:0;
+   margin:0;
   }
  .social-link
   {
@@ -172,31 +172,31 @@
   /*catalog*/
   .site-navigation
   {
-    padding:0;
-    margin:0;
+   padding:0;
+   margin:0;
   }
   /*link*/
   .site-navigation-item
   {
-    color:var(--black);
+   color:var(--black);
   }
   .active
   {
-    color:var(--basic-gray);
+   color:var(--basic-gray);
   }
   .site-navigation-item:hover
   {
-    color:var(--basic-reasons-blue);
+   color:var(--basic-reasons-blue);
   }
   .site-navigation-item:active
   {
-    color:var(--basic-light-gray);
+   color:var(--basic-light-gray);
   }
   /*link end*/
   .arrow-sorting
   {
-    padding:0;
-    margin:0;
+   padding:0;
+   margin:0;
   }
   .sorting
   {
@@ -207,8 +207,8 @@
   }
   .sorting-list
   {
-    padding:0;
-    margin:0;
+   padding:0;
+   margin:0;
   }
   .find-item
   {
@@ -243,8 +243,7 @@
   }
   .item:active
   {
-    color:var(--basic-reasons-blue);
-
+   color:var(--basic-reasons-blue);
   }
   .reiting
   {
@@ -256,8 +255,8 @@
   }
   .result-list
   {
-    padding:0;
-    margin:0;
+   padding:0;
+   margin:0;
   }
   .result-info,.result-header
   {
@@ -269,7 +268,7 @@
   }
   .result-info:hover
   {
-    color:var(--basic-reasons-blue);
+   color:var(--basic-reasons-blue);
   }
   .result-info:active
   {
@@ -288,7 +287,6 @@
    color:var(--basic-white);
    background-color:var(--basic-reasons-blue);
   }
-
   .result-link:hover
   {
     background-color:var(--color-blue-blue);
