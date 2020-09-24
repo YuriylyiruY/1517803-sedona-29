@@ -13,138 +13,153 @@
   --black:#000000;
   /*catalog colors*/
   --line-color: #E5E5E5;
+  --color-item:#CACACA;
+  --color-reiting:#666666;
+  --color-blue-blue:#669EC0;
+  --color-blue-blue-blue:#5496BD;
+  --gray-gray:#604E43;
+  --gray-gray-gray:#503E33;
   }
- .page
+  .page
   {
-    font-family: 'PT Sans', Arial,sans-serif;
-    text-transform: uppercase;
+    font-family:'PT Sans', Arial,sans-serif;
+    text-transform:uppercase;
     background-color:var(--basic-white);
     font-size:14px;
     font-weight:400;
   }
- a
+  a
   {
-    text-decoration: none;
+    text-decoration:none;
   }
- img
+  img
   {
-    max-width: 100%;
-    height: auto;
+    max-width:100%;
+    height:auto;
   }
- .site-navigation
+  button
   {
-    font-style: normal ;
-    font-size: inherit;
-    line-height: 26px ;
-    font-weight: 700;
+    text-transform:uppercase;
+  }
+  .site-navigation
+  {
+    font-size:inherit;
+    line-height:26px ;
+    font-weight:700;
     color:var(--black);
+    padding:0;
+     margin:0;
   }
- .sedona-town{
-    font-style: normal;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    text-align: center;
-    color:var(--black);
-  }
- .five-reasons{
-    font-style: normal;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 400;
-    text-align: center;
-    color:var(--basic-letters);
-  }
- .feature-header,.advantages-item,.advantages-title
+  .sedona-town
   {
-    font-style: normal;
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
+    font-size:21px;
+    line-height:26px;
+    font-weight:700;
     text-align:center;
     color:var(--black);
-   }
- .features-item,.advantages-description
+  }
+  .five-reasons
   {
-   font-style: normal;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight: 400;
+    line-height:26px;
+    text-align:center;
+    color:var(--basic-letters);
+  }
+  .features-list
+  {
+    padding:0;
+    margin:0;
+  }
+  .feature-header,.advantages-item,.advantages-title
+  {
+    font-size:21px;
+    line-height:21px;
+    font-weight:700;
+    text-align:center;
+    color:var(--black);
+  }
+  .features-item,.advantages-description
+  {
+   font-size:14px;
+   line-height:21px;
    text-align:center;
    color:var(--basic-letters);
   }
- .advantages-description-food
+  .advantages-list
   {
-   font-style: normal;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight: 400;
-   text-align:center;
+    padding:0;
+    margin:0;
+  }
+  .bg-blue
+  {
+   background-color: var(--basic-reasons-blue);
+   color: var(--basic-white);
+  }
+  .bg-gray
+  {
+   background-color: var(--basic-reasons-gray);
    color:var(--basic-letters);
   }
- .bg-blue
+  .appoitment-header
   {
-   background-color: #81B3D2;
-   color: #FFFFFF;
-  }
- .bg-gray
-  {
-   background-color: #EEEEEE;
-   color:var(--basic-letters);
-  }
- .appoitment-header
-  {
-   font-style: normal;
-   font-size: 30px;
-   line-height: 24px;
-   font-weight: 700;
+   font-size:30px;
+   line-height:24px;
+   font-weight:700;
    text-align:center;
    color:var(--black);
   }
- .trip-info
+  .trip-info
   {
-   font-style: normal;
-   font-size: 14px;
-   line-height: 24px;
-   font-weight: 400;
+   line-height:24px;
    text-align:center;
    color:var(--basic-letters);
   }
- .appointment-button
+  .appointment-button
   {
-   background: #766357;
+   background:var(--basic-gray);
    color:var(--basic-white);
-   text-transform: uppercase;
-   font-style: normal;
-   font-size: 21px;
-   line-height: 26px;
-   font-weight: 700;
+   text-transform:uppercase;
+   font-size:21px;
+   line-height:26px;
+   font-weight:700;
    text-align:center;
+   padding:28.5px 124px 31.5px 125px;
   }
- .form-check-in
+  .form-check-in
   {
      display:none;
   }
- .appointment:hover .form-check-in
+  .appointment:hover .form-check-in
   {
-     display: inline;
+     display:inline;
   }
- .form-check-in label
+  .appointment-button:hover
   {
-   font-style: normal;
-   font-size: 14px;
-   line-height: 26px;
-   font-weight: 700;
+    background-color: #604E43;
+
+  }
+  .appointment-button:active
+  {
+    background-color: #503E33;
+
+  }
+  .form-check-in label
+  {
+   line-height:26px;
+   font-weight:700;
    text-align:center;
   }
- .phone,.hashtag
+  .phone,.hashtag
   {
-   font-style: normal;
-   font-size: 21px;
-   line-height: 26px;
-   font-weight: 700;
+   font-size:21px;
+   line-height:26px;
+   font-weight:700;
    text-align:center;
    color:var(--black);
+  }
+  .socials-list
+  {
+    padding:0;
+    margin:0;
   }
  .social-link
   {
@@ -152,80 +167,150 @@
   }
  .copyright-link
   {
-   color: var(--html-academy-color);
+   color:var(--html-academy-color);
   }
   /*catalog*/
- .sorting
+  .site-navigation
   {
-   font-style: normal;
-   font-size: 12px;
-   line-height: 18px;
-   font-weight: 400;
+    padding:0;
+    margin:0;
+  }
+  /*link*/
+  .site-navigation-item
+  {
+    color:var(--black);
+  }
+  .active
+  {
+    color:var(--basic-gray);
+  }
+  .site-navigation-item:hover
+  {
+    color:var(--basic-reasons-blue);
+  }
+  .site-navigation-item:active
+  {
+    color:var(--basic-light-gray);
+  }
+  /*link end*/
+  .arrow-sorting
+  {
+    padding:0;
+    margin:0;
+  }
+  .sorting
+  {
+   font-size:12px;
+   line-height:18px;
    text-align:center;
    color:var(--black);
   }
- .find-item
+  .sorting-list
   {
-   font-style: normal;
-   font-size: 21px;
-   line-height: 26px;
-   font-weight: 700;
+    padding:0;
+    margin:0;
+  }
+  .find-item
+  {
+   font-size:21px;
+   line-height:26px;
+   font-weight:700;
    text-align:center;
    color:var(--black);
   }
- .sorting-item
+  .sorting-item
   {
-   font-style: normal;
-   font-size: 12px;
-   line-height: 18px;
-   font-weight: 400;
+   font-size:12px;
+   line-height:18px;
    text-align:center;
-   color:var(--black);
+   color:var(--basic-light-gray);
   }
- .sorting-item:hover
+  .sorting-item:hover
   {
    color:var(--basic-reasons-blue);
   }
- .item:hover
+  .sorting-item:active
   {
-   background-color:var(--basic-reasons-blue);
+    color:var(--black);
   }
- .result-info,.result-header
+  .item
   {
-   font-style: normal;
-   font-size: 26px;
-   line-height: 21px;
-   font-weight: 700;
+  color: var(--color-item);
+  }
+  .item:hover
+  {
+   color:var(--black);
+  }
+  .item:active
+  {
+    color:var(--basic-reasons-blue);
+
+  }
+  .reiting
+  {
+   color:var(--color-reiting);
+   background-color:var(--basic-light-blue);
+   padding:0;
+   margin: 3px 1220px 3px 0px;
+   padding:3px 12px 3px 15px;
+  }
+  .result-list
+  {
+    padding:0;
+    margin:0;
+  }
+  .result-info,.result-header
+  {
+   font-size:26px;
+   line-height:21px;
+   font-weight:700;
    text-align:center;
    color:var(--black);
   }
- .result-housing
+  .result-info:hover
   {
-   font-style: normal;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight: 400;
+    color:var(--basic-reasons-blue);
+  }
+  .result-info:active
+  {
+   color:var(--basic-light-gray);
+  }
+  .result-housing
+  {
    text-align:center;
    color:var(--basic-letters);
   }
- .result-link
+  .result-link
   {
-   font-style: normal;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight: 400;
+   padding:6px 16px 6px 17px;
+   line-height:21px;
    text-align:center;
    color:var(--basic-white);
    background-color:var(--basic-reasons-blue);
   }
- .result-submit
+
+  .result-link:hover
   {
-   font-style: normal;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight: 400;
+    background-color:var(--color-blue-blue);
+  }
+  .result-link:active
+  {
+    background-color:var(--color-blue-blue-blue);
+  }
+  .result-submit
+  {
+   padding:3px 17px 3px 16px;
+   line-height:21px;
    text-align:center;
    color:var(--basic-white);
    background-color:var(--basic-gray);
+  }
+  .result-submit:hover
+  {
+    background-color: var(--gray-gray);
+  }
+  .result-submit:active
+  {
+    background-color:var(--gray-gray-gray);
   }
 
