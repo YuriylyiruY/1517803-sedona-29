@@ -19,6 +19,7 @@
   --color-blue-blue-blue:#5496BD;
   --gray-gray:#604E43;
   --gray-gray-gray:#503E33;
+  --color-gray-footer:#BDBBBC;
   }
   .page
   {
@@ -50,6 +51,13 @@
     padding:0;
      margin:0;
   }
+  .promo
+  {
+    text-align:center;
+    background-image: url(../img/sedona.jpg);
+    width:1200px;
+    height:509px;
+  }
   .sedona-town
   {
     font-size:21px;
@@ -57,6 +65,7 @@
     text-align:center;
     color:var(--black);
   }
+
   .five-reasons
   {
     text-align:center;
@@ -132,16 +141,19 @@
   .appointment:hover .form-check-in
   {
      display:inline;
+     background-image: url(img/layer-35.png);
+  }
+  .appointment:hover
+  {
+     display:inline;
   }
   .appointment-button:hover
   {
-    background-color:#604E43;
-
+    background-color:var(--gray-gray);
   }
   .appointment-button:active
   {
-    background-color:#503E33;
-
+    background-color:var(--gray-gray-gray);
   }
   .form-check-in label
   {
@@ -160,9 +172,50 @@
    padding:0;
    margin:0;
   }
- .social-link
+ .social-block
   {
-   background-color:var(--basic-reasons-blue);
+    background-color:var(--basic-reasons-blue);
+    width:46px;
+    height:48px;
+    margin:5px;
+  }
+  .social-block:hover
+  {
+    background-color:var(--color-blue-blue);
+  }
+  .social-block:active
+  {
+    background-color:var(--color-blue-blue-blue);
+    opacity:0.3;
+  }
+  .social-block
+  {
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+  }
+  .social-pic
+  {
+    background-image:url(../img/twitter2.svg);
+  }
+  .social-pic:active
+  {
+    background-image:url(../img/twitter3.svg);
+  }
+  .social-pic-f
+  {
+    background-image:url(../img/fb-icon.svg);
+  }
+  .social-pic-f:active
+  {
+    background-image:url(../img/fb-icon-1.svg);
+  }
+  .social-pic-youtube
+  {
+    background-image:url(../img/youtube.svg);
+  }
+  .social-pic-youtube:active
+  {
+    background-image:url(../img/youtube-1.svg);
   }
  .copyright-link
   {
@@ -308,5 +361,26 @@
   .result-submit:active
   {
     background-color:var(--gray-gray-gray);
+  }
+  .logo-web
+  {
+    margin-left:5px;
+    width:75px;
+    height:15px;
+    float:left;
+    margin-bottom:0;
+  }
+  .logo-img
+  {
+    margin:20px;
+    margin-left:0;
+  }
+  .logo-img:hover
+  {
+    fill:var(--basic-reasons-blue);
+  }
+   .logo-img:active
+  {
+  fill:var(--color-gray-footer);
   }
 
