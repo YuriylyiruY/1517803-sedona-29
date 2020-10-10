@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-   <html class="page-page" lang="ru">
+   <html class="olimp" lang="ru">
      <head>
        <meta charset="utf-8">
        <title>HTML Academy: Седона</title>
@@ -8,14 +8,15 @@
        <link href="css/style.css" rel="stylesheet">
      </head>
      <body class="page">
+      <div class="page-wraper">
        <header class="page-header">
          <nav class="navigation">
            <a class="logo"><img   src="img/logo.svg"  alt="Логотип города Седона"></a>
            <ul class="site-navigation">
-             <li ><a class="site-navigation-item" href="#!">Информация</a></li>
-             <li ><a class="site-navigation-item"href="#!">Фото и видео</a></li>
-             <li ><a class="site-navigation-item" href="#!">Карта штата</a></li>
-             <li ><a class="site-navigation-item" href="catalog.html">Гостиницы</a></li>
+             <li class="site-navigation-item"><a href="#!">Информация</a></li>
+             <li class="site-navigation-item"><a href="#!">Фото и видео</a></li>
+             <li class="site-navigation-item"><a href="#!">Карта штата</a></li>
+             <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
            </ul>
          </nav>
        </header>
@@ -24,18 +25,20 @@
          <section class="promo">
             <img src="img/welcome.png">
          </section>
-             <p class="sedona-town"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+         <section class="sedona-fife-reasons">
+             <p class="sedona-town"><b>Седона — небольшой городок в Аризоне,</b></p>
+             <p class="sedona-town piece">   <b>заслуживающий большего! </b></p>
              <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+         </section>
          <section class="features">
              <ol class="features-list">
-               <li class="features-item bg-blue sample-1">
-                 <div class="feature-info"><h3 class="feature-header bg-blue"> Настоящий городок</h3>
+               <li class="features-item">
+                 <div class="feature-info bg-blue"><h3 class="feature-header bg-blue"> Настоящий городок</h3>
                       <p class="feature-number">№1</p>
                       <p class="feature-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                  </div>
-               </li>
-               <li class="sample-1-1"><div class="feature-img-wrap"><img src="img/image.png"></div></li>
-               <ul class="advantages-list bg-white  ">
+                 <div><img class="feature-img-wrap"src="img/image.png"></div>
+                 <ul class="advantages-list bg-white  ">
                    <li class="advantages-item housing"><h3 class="advantages-title">Жильё</h3>
                      <svg width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M45.656 65.033H29.656V41.21H45.656V65.033ZM42.718 44.134H32.593V62.11H42.718V44.134Z" fill="#81B3D2"/>
@@ -56,29 +59,31 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M61.097 23.501H36.312C50.125 16.602 51.229 12.25 50.72 9.816C49.558 5.853 45.028 2.793 40.718 4.409C35.149 6.498 33.581 14.797 32.074 20.796C30.15 14.726 28.29 6.982 23.938 3.059C22.677 1.921 20.843 0.794999 18.175 1.031C14.149 1.387 8.373 6.413 10.717 12.012C12.968 17.39 20.404 20.789 25.295 23.501H2.879C1.29355 23.5026 0.00715075 24.7846 0 26.37V37.692C0.00715075 39.2774 1.29355 40.5594 2.879 40.561H3.153V77H60.994V40.561H61.097C62.6828 40.5599 63.9698 39.2778 63.977 37.692V26.37C63.9698 24.7842 62.6828 23.5021 61.097 23.501ZM42.413 6.944C44.516 6.634 47.395 8.243 47.668 10.153C48.061 12.909 44.268 15.408 42.582 16.574C40.059 18.318 37.654 19.217 35.295 20.629C36.179 16.939 37.844 7.618 42.413 6.944ZM19.531 16.912C17.306 15.427 12.987 12.481 13.091 9.141C13.203 5.546 18.834 2.571 21.905 5.255C25.761 8.626 27.618 16.36 29.024 21.812C25.775 20.273 22.696 19.024 19.531 16.912ZM25.503 74.026H6.136V40.561H25.504V74.026H25.503ZM25.503 37.524H3.046V26.538H25.503V37.524ZM35.66 37.524V74.027H28.486V26.538H35.66V37.524ZM58.011 74.026H38.644V40.561H58.011V74.026ZM60.931 37.524H38.644V26.538H60.931V37.524Z" fill="#81B3D2"/>
                     </svg><p class="advantages-description">Не только китайского, но и местного производства!</p>
                    </li>
-                 </ul>
-               <li class="features-item bg-blue sample-2">
-                 <div><h3 class="feature-header bg-blue">Там есть мост дьявола</h3>
+                  </ul>
+                </li>
+               <li class="features-item">
+                 <div class=" feature-info bg-blue"><h3 class="feature-header bg-blue">Там есть мост дьявола</h3>
                       <p class="feature-number"> №2 </p>
                       <p class="feature-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                  </div>
+                 <div class="feature-img-wrap"><img src="img/image-2.jpg"></div>
                </li>
-              <li class="sample-1-2"><div class="feature-img-wrap"><img src="img/image-2.jpg"></div>
-              </li>
-              <li class="features-item bg-gray sample-3">
-                 <div class="number"><h3 class="feature-header">Небольшая площадь</h3>
+
+              <li class="features-item">
+                 <div class="feature-info bg-gray"><h3 class="feature-header">Небольшая площадь</h3>
                       <p class="feature-number" >№3</p>
                       <p class="feature-description">Все достопримечательности находятся очень близко</p>
                  </div>
                </li>
-               <li class="features-item bg-gray sample-4" >
-                 <div><h3 class="feature-header">Красивая дорога</h3>
+               <li class="features-item" >
+                 <div class="feature-info bg-gray">
+                   <h3 class="feature-header">Красивая дорога</h3>
                       <p class="feature-number">№4</p>
                       <p class="feature-description">Ехать в седону из лас-вегаса совсем не скучно!</p>
                  </div>
                </li>
-               <li class="features-item bg-gray sample-5">
-                 <div><h3 class="feature-header">Мало туристов</h3>
+               <li class="features-item">
+                 <div class="feature-info bg-gray"><h3 class="feature-header">Мало туристов</h3>
                       <p class="feature-number">№5</p>
                       <p class="feature-description">Большинство едет в гранд каньон и толпится там</p>
                   </div>
@@ -89,16 +94,14 @@
            <h2 class="appoitment-header">Заинтересовались?</h2>
            <p class="trip-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
              <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
-              <div><form  class="form-check-in" method="post">
-
-                   <label >Дата заезда</label>
-                   <input  type="date">
-                   <label >Дата выезда</label>
-                   <input  type="date">
-                   <input class="form-check-in-submit" type="submit" value="найти">
+            <div>  <form  class="form-check-in" method="post">
+                 <div class="check-in"> <label >Дата заезда
+                   <input  type="date"></label></div>
+                 <div class="check-on">  <label >Дата выезда
+                   <input  type="date"></label></div>
+                  <div class="butom-form"> <input class="form-check-in-submit" type="submit" value="найти"></div>
                </form>
-              </div>
-
+            </div>
          <div class="map"><img src="img/map.jpg"></div>
         </section>
        </main>
@@ -132,6 +135,7 @@
           </a>
         </section>
        </footer>
+      </div>
      </body>
    </html>
 

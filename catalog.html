@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-   <html lang="ru">
+   <html class="olimp"lang="ru">
      <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
@@ -8,42 +8,91 @@
         <link href="css/style.css" rel="stylesheet">
      </head>
      <body class="page">
+      <div class="page-wraper">
        <header class="page-header">
          <nav class="navigation">
-           <a  class="logo" href="index.html"><img class="logo" src="img/logo.svg"  alt="Логотип города Седона"></a>
+           <a class="logo" href="index.html"><img   src="img/logo.svg"  alt="Логотип города Седона"></a>
            <ul class="site-navigation">
-             <li><a class="site-navigation-item " href="#!">Информация</a></li>
-             <li><a class="site-navigation-item"href="#!">Фото и видео</a></li>
-             <li><a class="site-navigation-item"href="#!">Карта штата</a></li>
-             <li><a class="site-navigation-item active">Гостиницы</a></li>
+             <li class="site-navigation-item"><a href="#!">Информация</a></li>
+             <li class="site-navigation-item"><a href="#!">Фото и видео</a></li>
+             <li class="site-navigation-item"><a href="#!">Карта штата</a></li>
+             <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
            </ul>
          </nav>
        </header>
        <main>
          <section class="search">
-           <h2>Фильтр типа жилья</h2>
+         <!--<h2>Фильтр типа жилья</h2>-->
            <!-- Здесь будет форма фильтра -->
-           <img>
+     <div class="catalog-form-pic">
+             <img >
+
+            <div class="catalog-form-part-1-1">
+              <div>Инфраструктура</div>
+              <label ><input class="first-checkbox" type="checkbox" value="1" name="k" checked><span></span></label>
+              <label ><input class="first-checkbox" type="checkbox" value="1" name="k" ><span></span></label>
+              <label ><input class="first-checkbox" type="checkbox" value="1" name="k" ><span></span></label>
+
+            </div>
+            <div class="catalog-form-part-1-2">
+             <div> Тип жилья:</div>
+             <label ><input class="first-checkbox" type="checkbox" value="1" name="k" checked><span></span></label>
+             <label ><input class="first-checkbox" type="checkbox" value="1" name="k" checked><span></span></label>
+             <label ><input class="first-checkbox" type="checkbox" value="1" name="k" checked><span></span></label>
+            </div>
+
+        <div class="catalog-form-part-2">
+            <legend>Стоимость:</legend>
+             <div class="price"> <label >
+                от <input type="number" name="min-price" value="0">|
+              </label>
+              <label >
+                до <input type="number" name="max-price" value="15000">
+              </label>
+             </div>
+              <div class="toggle">
+                 <div class="scale">
+                   <div class="bar"></div>
+                  </div>
+                 <div class="toggles toggle-min"></div>
+                 <div class="toggles toggle-max"></div>
+              </div>
+              <div class="show"><input type="submit" value="Показать" ></div>
+        </div>
+      </div>
+
          </section>
          <!-- <h2 class="result-header">Список жилья</h2>-->
-          <ul class="result-list">
-            <li class="find-item"><div>Найдено:<span>3</span></div></li>
-            <li class="result-item-0-2">
+        <section class="unite-first-result-section">
+            <section class="result-search">
+            <div>Найдено:<span>3</span></div>
+            </section>
+            <section class="result-sorting">
              <ul class="sorting-list">
               <li class="sorting-text">Сортировка:</li>
               <li class="sorting-item">По цене</li>
               <li class="sorting-item">По типу</li>
               <li class="sorting-item">По рейтингу</li>
-              <li class="arrow-sorting"><a class="item up" href="#!"><p class="item up"></p></a></li>
-              <li class="arrow-sorting"><a class="item down" href="#!"><p class="item down"></p></a></li>
+
              </ul>
-            <li class="result-item-1-1">
+            </section>
+            <section class="arrow">
+              <ul class="arrow-sorting">
+                <li><a href="#!"><div class="down"></div></a></li>
+                <li><a href="#!"><div class="up"></div></a></li>
+             </ul>
+            </section>
+        </section>
+         <section class="result-search-info">
+              <ul class="result-search-list">
+             <li class="result-item-1-1">
              <div class="result-pic"><img class="result-img" src="img/pic-up.jpg"alt="Amara Resort & Spa"></div>
-            </li>
+             </li>
             <li class="result-item-1-2">
               <div class="result-information"><a class="result-info-link"><h3 class="result-info">Amara Resort & Spa</h3></a>
-                   <p class="result-housing-1">гостиница</p>
+                   <div class="housing-catalog"><p class="result-housing-1">гостиница</p>
                    <p class="result-housing-2">от 4000 ₽</p>
+                   </div>
                    <a class="result-link" href="product.html">Подробнее</a>
                    <button class="result-submit" type="button">Забронировать</button>
               </div>
@@ -57,8 +106,9 @@
             </li>
             <li class="result-item-2-2">
               <div class="result-information"><a class="result-info-link"><h3 class="result-info">Desert Quail Inn</h3></a>
-                   <p class="result-housing-1">мотель</p>
+                <div class="housing-catalog">  <p class="result-housing-1">мотель</p>
                    <p class="result-housing-2">от 3000 ₽</p>
+                </div>
                    <a class="result-link" href="product.html">Подробнее</a>
                    <button class="result-submit" type="button">Забронировать</button>
               </div>
@@ -72,9 +122,10 @@
             </li>
             <li class="result-item-3-2">
               <div class="result-information"><a class="result-info-link"><h3 class="result-info">Villas at Poco Diablo</h3></a>
-
+                <div class="housing-catalog">
                <p class="result-housing-1">апартаменты</p>
                <p class="result-housing-2">от 2000 ₽</p>
+               </div>
               <a class="result-link" href="product.html">Подробнее</a>
               <button class="result-submit" type="button">Забронировать</button>
               </div>
@@ -116,5 +167,6 @@
           </a>
         </section>
        </footer>
+      </div>
      </body>
    </html>
