@@ -33,43 +33,43 @@ padding: 0;
 }
 .page
 {
-  display:flex;
 font-family:'PT Sans', Arial,sans-serif;
 text-transform:uppercase;
 background-color:var(--main-background-color);
+color:var(--black);
 font-size:14px;
 font-weight:400;
 line-height:26px;
 }
-.olimp
-{
-width:1200px;
-border:1px solid red;
-justify-content:center;
-margin:0 auto;
-}
 .page-wraper
 {
-align-content: start;
 display:grid;
 grid-template-rows: min-content 1fr min-content;
 min-height:100%;
 width:1200px;
 margin:0 auto;
+box-shadow:  0 5px 15px rgba(0, 1, 1, 0.2);
 }
 .page-footer
 {
 display:grid;
 grid-template-columns:400px 400px 400px;
+/*background-image:url(../img/map-back.svg);*/
+}
+.backgr-pic
+{
+width:1200px;
+height:120px;
+position: absolute;
+background-image:url(../img/map-back.svg);
+opacity:0.3;
 }
 .logo
 {
 position: absolute;
-margin-left: 531px;
-}
-.navigation
-{
-display:grid;
+top:0;
+left:50%;
+transform:translate(-50%);
 }
 a
 {
@@ -86,171 +86,158 @@ text-transform:uppercase;
 }
 .site-navigation
 {
+list-style:none;
 font-size:inherit;
 font-weight:700;
+display:flex;
+padding-left:72px;
+padding-right:72px;
+}
+.site-navigation-item
+{
 color:var(--black);
-padding:0;
-margin:0;
-list-style:none;
-margin: 0 auto;
-width:1200px;
-height:56px;
-display:grid;
-grid-template-columns: 72px 264px 264px 264px 264px 72px;
 }
-.site-navigation li:nth-child(1)
+.active
 {
-display: flex;
-align-items:center;
-grid-column-start: 2;
-grid-column-end: 3;
+color:var(--basic-gray);
 }
-.site-navigation li:nth-child(2)
+.site-navigation-item:hover
 {
-display: flex;
-align-items:center;
-grid-column-start: 3;
-grid-column-end: 4;
+color:var(--basic-reasons-blue);
 }
-.site-navigation li:nth-child(3)
+.site-navigation-item:active
 {
-display: flex;
-align-items:center;
-grid-column-start: 4;
-grid-column-end: 5;
+color:var(--basic-light-gray);
 }
-.site-navigation li:nth-child(4)
+.text-write
 {
-display: flex;
-align-items:center;
-grid-column-start: 5;
-grid-column-end: 6;
-}
-.site-navigation li:nth-child(1) ,.site-navigation li:nth-child(2)
-{
+display:flex;
 justify-content: flex-start;
+align-items: center;
+width:264px;
+height:56px;
 }
-.site-navigation li:nth-child(3) ,.site-navigation li:nth-child(4)
+.item-text-write
 {
+display:flex;
 justify-content: flex-end;
+align-items: center;
+width:264px;
+height:56px;
 }
 .promo
 {
-text-align:center;
+display:flex;
 background-image: url(../img/sedona.jpg);
+background-repeat: no-repeat;
 min-height:509px;
+align-items:center;
+justify-content:center;
 }
-.promo::after{background-image:url(../img/group.png);}
-.sedona-fife-reasons
+.housing
 {
 display:flex;
+align-content:space-around;
+}
+.sedona-fife-reasons
+{
+display: flex;
 width:1200px;
 height:214px;
-flex-direction:column;
-align-items:center;
-justify-content: space-around;
+flex-direction: column;
 }
 .sedona-town
 {
-display:flex;
 font-size:21px;
 font-weight:700;
-height:40px;
-width:470px;
-color:var(--black);
-justify-content:center;
-}
-.piece
-{
-display:flex;
-font-size:21px;
-font-weight:700;
-height:40px;
-width:470px;
-color:var(--black);
-justify-content:center;
-margin-top:-75px;
+height:80px;
+max-width:444px;
+line-height: 26px;
+margin-left:384px;
+margin-top:42px;
+margin-bottom: 16px;
+text-align: center;
 }
 .five-reasons
 {
-text-align:center;
+width:1200px;
+height:26px;
 color:var(--basic-letters);
+text-align:center;
 }
+/*5 больших блоков в центре*/
 .features-list
 {
 display:flex;
 flex-wrap:wrap;
-padding:0;
 list-style:none;
 }
-.features-list li:nth-child(1)
+.features-list .features-item
 {
-position:relative;
 display:flex;
 flex-wrap:wrap;
 }
 .feature-info
 {
 display:flex;
-width:400px;
-height:257px;
-flex-direction:column;
-justify-content:space-around;
-align-items:center;
+width:1200px;
+height:256px;
 }
-.feature-image-wrap
-{
-margin-left:400px;
-display:flex;
-width:800px;
-height:257px;
-}
-.advantages-list
-{
-display:flex;
-}
-.advantages-item
-{
-height:332px;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-}
-.features-list li:nth-child(2)
-{
-display:flex;
-}
-.features-list li:nth-child(3)
-{
-display:flex;
-min-height:257px;
-width:400px;
-}
-.features-list li:nth-child(4)
-{
-display:flex;
-width:400px;
-min-height: 257px;
-}
-.features-list li:nth-child(5)
-{
-display:flex;
-min-height:257px;
-width:400px;
-}
-.feature-header,.advantages-item,.advantages-title
+.feature-header-white, .feature-header-gray
 {
 font-size:21px;
 line-height:21px;
 font-weight:700;
-text-align:center;
-color:var(--black);
+display: flex;
+color:var(--main-background-color);
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width:400px;
+height:256px;
 }
-.features-item,.advantages-description
+.feature-number,.feature-description
 {
 font-size:14px;
 line-height:21px;
-color:var(--basic-letters);
+font-weight:400;
+text-align:center;
+}
+.feature-description
+{
+margin-top: 36px;
+margin-bottom: 54px;
+max-width: 297px;
+}
+.gray-col
+{
+max-width:257px;
+}
+.gray-color
+{
+max-width:276px;
+}
+.feature-img-wrap
+{
+display:flex;
+height:256px;
+width:800px;
+justify-content: flex-end;
+}
+.realy-town
+{
+text-align: center;
+max-width: 140px;
+margin-top: 47px;
+margin-bottom: 25px;
+}
+.bridge
+{
+margin-top: 47px;
+}
+.bridge-1
+{
+margin-bottom: 25px;
 }
 .bg-blue
 {
@@ -266,48 +253,141 @@ color:var(--basic-letters);
 {
 background-color:var(--main-background-color);
 }
-.appoitment-header
+.features-list .conversely
 {
-font-size:30px;
-line-height:24px;
+display:flex;
+flex-direction: row-reverse;
+}
+.features-list .features-item-gray
+{
+display:flex;
+min-height:257px;
+width:400px;
+}
+.feature-header-gray,.advantages-item,.advantages-title
+{
+font-size:21px;
+line-height:21px;
 font-weight:700;
 text-align:center;
 color:var(--black);
 }
+.features-item,.advantages-description
+{
+font-size:14px;
+color:var(--basic-letters);
+}
+.feature-header-gray h3
+{
+max-width: 160px;
+text-align:center;
+margin-top:48px;
+margin-bottom:31px;
+}
+/* еда жилльё сувениры блок №1*/
+.advantages-list
+{
+display:flex;
+list-style:none;
+}
+.housing,.food,.souvenirs
+{
+display: flex;
+flex-direction:column;
+height:330px;
+width:400px;
+}
+.picture-housing
+{
+background-image: url(../img/icon-1.svg);
+background-repeat: no-repeat;
+background-position: center;
+margin-top:60px;
+width:400px;
+height: 72px;
+margin-bottom: 29px;
+}
+.picture-food
+{
+background-image: url(../img/icon-3.svg);
+background-repeat: no-repeat;
+background-position: center;
+margin-top:60px;
+width:400px;
+height: 70px;
+margin-bottom: 29px;
+}
+.picture-souvenirs
+{
+background-image: url(../img/icon-2.svg);
+background-repeat: no-repeat;
+background-position: center;
+margin-top:55px;
+width:400px;
+height: 77px;
+margin-bottom: 29px;
+}
+.advantages-description
+{
+margin-top: 30px;
+text-align: center;
+max-width: 283px;
+margin-left: 73px;
+}
+.for-food
+{
+max-width: 290px;
+}
+/*концовка  жильё еда сувениры блока №1*/
+
+
+
+
+
+
+
+/*заинтересовались и кнопка поиска гостиницы*/
+.appointment
+{
+display:flex;
+width: 1200px;
+height:207px;
+flex-direction:column;
+align-content:space-between;
+}
+.appointment-header
+{
+font-size:30px;
+font-weight:700;
+display:flex;
+height: 60px;
+justify-content:center;
+color:var(--black);
+padding-top: 60px;
+}
 .trip-info
 {
-line-height:24px;
-text-align:center;
+display:flex;
+height:87px;
+width:1200px;
+align-items: center;
 color:var(--basic-letters);
+flex-direction:column;
+line-height: 2;
 }
 .appointment-button
 {
+width:568px;
+height:86px;
+}
+.appointment-button[type="button"]
+{
+font-size:21px;
+font-weight:700;
 background:var(--basic-gray);
 color:var(--main-background-color);
 text-transform:uppercase;
-font-size:21px;
-font-weight:700;
 text-align:center;
-padding:28.5px 124px 31.5px 125px;
-margin-left:33%;
-}
-.form-check-in
-{
-display:none;
-width:555px;
-height:400px;
-position:absolute;
-margin-left:383px;
-margin-top:-9px;
-}
-.appointment:hover .form-check-in
-{
-display:inline;
-background-image: url(../img/layer-35.png);
-}
-.appointment:hover
-{
-display:inline;
 }
 .appointment-button:hover
 {
@@ -317,29 +397,106 @@ background-color:var(--gray-gray);
 {
 background-color:var(--gray-gray-gray);
 }
+.first-form
+{
+margin-left:316px;
+margin-right: 320px;
+}
+.form-check-in
+{
+
+width:568px;
+height:395px;
+position: absolute;
+background-color: slateblue;
+display:none;
+
+}
 .check-in
 {
-margin:55px;
+  margin-bottom:50px;
+}
+.check-in label
+{
+  width:400px;
 }
 .check-on
 {
-  margin:55px;
+  margin-bottom:50px;
 }
-.butom-form
+.check-on label
 {
-margin:55px;
+  width:400px;
 }
-.form-check-in label
+/* взрослые, дети*/
+
+.people
 {
+display: flex;
+  width:500px;
+  height:100px;
+
+}
+.adult
+{
+width:114px;
+height:38px;
+margin-right:50px;
+}
+.adult input[type="number"],.children input[type="number"]
+{
+  opacity:0;
+}
+.pic-form
+{
+width:40px;
+background-color:var(--basic-light-blue);
+width:114px;
+height:38px;
+}
+.pic-form-plus
+{
+width:12px;
+height:3px;
+background-color:var(--basic-light-gray);
+}
+.children
+{
+width:114px;
+height:38px;
+margin-bottom:50px;
+}
+.children label
+{
+width:400px;
+}
+/* завершение взрослые,дети*/
+.form-check-in-submit
+{
+width:458px;
+height:58px;
+background:var(--basic-reasons-blue);
+color:var(--main-background-color);
+text-transform:uppercase;
 font-weight:700;
-text-align:center;
+font-size:21px;
+line-height:26px;
+margin-left: 55px;
 }
+.first-form:hover .form-check-in
+{
+display:inline;
+}
+
+/*карта*/
 .map
 {
-background-image:url(../img/map.jpg);
+width:1200px;
+height:593px;
+background-image:url(../img/map.svg);
 background-repeat:no-repeat;
-margin-bottom: -6px;
 }
+/*футер*/
 .phone,.hashtag
 {
 font-size:21px;
@@ -361,19 +518,23 @@ height:121px;
 .social-link
 {
 display:block;
-background-image:url(../img/rect.png);
-background-repeat: no-repeat;
+background-color:var(--basic-reasons-blue);
 width:50px;
 height:50px;
-background-position: 50% 50%;
+margin-right:6px;
+
+}
+.yout
+{
+  margin-right:0;
 }
 .social-link:hover
 {
-background-image:url(../img/rect-1.png);
+background-color:var(--color-blue-blue);
 }
 .social-link:active
 {
-background-image:url(../img/rect-2.png);
+background-color:var(--color-blue-blue-blue);
 }
 .vk
 {
@@ -387,7 +548,8 @@ background-image:url(../img/twitter2.svg);
 }
 .vk:active
 {
-background-image:url(../img/twitter3.svg);
+background-image:url(../img/twitter2.svg);
+opacity:0.5;
 }
 .fb
 {
@@ -401,7 +563,8 @@ background-repeat: no-repeat;
 }
 .fb:active
 {
-background-image:url(../img/fb-icon-1.svg);
+background-image:url(../img/fb-icon.svg);
+opacity: 0.5;
 }
 .youtube
 {
@@ -415,7 +578,8 @@ background-image:url(../img/youtube.svg);
 }
 .youtube:active
 {
-background-image:url(../img/youtube-1.svg);
+background-image:url(../img/youtube.svg);
+opacity:0.5;
 }
 .copyright-link
 {
@@ -458,25 +622,8 @@ height:20px;
 width:180px;
 margin-bottom:30px;
 }
-
-/*catalog*/
-
-.site-navigation-item
-{
-color:var(--black);
-}
-.active
-{
-color:var(--basic-gray);
-}
-.site-navigation-item:hover
-{
-color:var(--basic-reasons-blue);
-}
-.site-navigation-item:active
-{
-color:var(--basic-light-gray);
-}
+/*страница каталога*/
+/*форма 2*/
 .search
 {
 margin-top:-70px;
@@ -584,7 +731,8 @@ left:160px;
 {
 border:1px solid;
 }
-/*link end*/
+/*завершение формы*/
+/**/
 .arrow-sorting
 {
 
@@ -660,6 +808,15 @@ background-image:url(../img/icon-down-1.svg);
 {
 background-image:url(../img/icon-down-2.svg);
 }
+.result-sorting .sorting-list
+{
+display:flex;
+width:400px;
+height:87px;
+justify-content:space-around;
+align-items:center;
+}
+/**/
 .reiting
 {
 width:100px;
@@ -728,6 +885,8 @@ width:115px;
 {
 padding:6px 16px 6px 17px;
 line-height:21px;
+width:111px;
+
 text-align:center;
 color:var(--main-background-color);
 background-color:var(--basic-reasons-blue);
@@ -740,9 +899,16 @@ background-color:var(--color-blue-blue);
 {
 background-color:var(--color-blue-blue-blue);
 }
+.dva
+{
+  flex-direction: row;
+}
+
+
 .result-submit
 {
 padding:3px 17px 3px 16px;
+width:142px;
 line-height:21px;
 text-align:center;
 color:var(--main-background-color);
@@ -796,14 +962,7 @@ width:200px;
 margin-left:73px;
 align-items:center;
 }
-.result-sorting .sorting-list
-{
-display:flex;
-width:400px;
-height:87px;
-justify-content:space-around;
-align-items:center;
-}
+
 .result-search-info
 {
 display:flex;
@@ -831,6 +990,7 @@ margin-right:30px;
 display:flex;
 width:258px;
 height:151px;
+flex-direction:column ;
 
 
 }
