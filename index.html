@@ -11,7 +11,7 @@
       <div class="page-wraper">
        <header class="page-header">
          <nav class="navigation">
-           <a class="logo"><img   src="img/logo.svg"  alt="Логотип города Седона"></a>
+           <a class="logo"><img src="img/logo.svg"  alt="Логотип города Седона"></a>
            <ul class="site-navigation">
              <li ><a class="site-navigation-item text-write"href="#!">Информация</a></li>
              <li ><a class="site-navigation-item text-write"href="#!">Фото и видео</a></li>
@@ -110,11 +110,11 @@
              <div class="form-button">
                <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
              </div>
-             <div class="form-check-in">
-               <form method="post">
-                <div class="check-in"> <label >Дата заезда<input  type="date"></label>
-                </div>
-                <div class="check-on">  <label >Дата выезда<input  type="date"></label>
+
+             <form method="post"><div class="form-check-in">
+              <div class="check-in"> <label class="date-in" >Дата заезда:</label><input  type="date" value="24 апреля 2017 "><span>24 апреля 2017</span>
+</div>
+                <div class="check-on">  <label >Дата выезда:<input  type="date"><span></span></label>
                 </div>
                 <div class="people">
                     <div class="adult">
@@ -136,9 +136,9 @@
                 </div>
                 <div class="button-form"> <input class="form-check-in-submit" type="submit" value="найти">
                 </div>
-
+</div>
                </form>
-             </div>
+
            </section>
            <section class="map"></section>
        </main>
