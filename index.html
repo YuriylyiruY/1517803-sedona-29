@@ -110,35 +110,36 @@
              <div class="form-button">
                <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
              </div>
-
-             <form method="post"><div class="form-check-in">
-              <div class="check-in"> <label class="date-in" >Дата заезда:</label><input  type="date" value="24 апреля 2017 "><span>24 апреля 2017</span>
-</div>
-                <div class="check-on">  <label >Дата выезда:<input  type="date"><span></span></label>
+            <div class="form-check-in">
+             <form method="post">
+              <div class="check-in"><label class="date-in">Дата заезда:</label><input  type="text" value="24 апреля 2017 ">
+              </div>
+                <div class="check-on"> <label>Дата выезда:</label><input  type="text" value="24 апреля 2017">
                 </div>
                 <div class="people">
-                    <div class="adult">
-                      <label for="amount-adult">Взрослые</label>
-                      <div class="pic-form">
-                        <div class="pic-form-plus"></div>
-                        <div class="pic-form-minus"></div>
-                        <input type="number" min="0" max="20" step="1" id="amount-adult" name="amount-adult">
-                      </div>
+                  <label class="adult" for="amount-adult">Взрослые</label>
+                  <div class="pic-form">
+                    <div class="pic-form-minus">
                     </div>
-                    <div class="children">
-                      <label for="amount-child">Дети</label>
-                      <div class="pic-form">
-                        <div class="pic-form-plus"></div>
-                        <div class="pic-form-minus"></div>
-                        <input type="number" min="0" max="20" step="1" id="amount-child" name="amount-child">
-                      </div>
+                    <span>0</span>
+                    <div class="pic-form-plus">
                     </div>
+                    <input type="number" min="0" max="20" step="1" id="amount-adult" name="amount-adult">
+                  </div>
+                  <label class="children" for="amount-child">Дети</label>
+                  <div class="pic-form-1">
+                    <div class="pic-form-minus">
+                    </div>
+                    <span >2</span>
+                    <div class="pic-form-plus">
+                    </div>
+                    <input type="number" min="0" max="20" step="1" id="amount-child" name="amount-child">
+                  </div>
                 </div>
                 <div class="button-form"> <input class="form-check-in-submit" type="submit" value="найти">
                 </div>
-</div>
                </form>
-
+            </div>
            </section>
            <section class="map"></section>
        </main>

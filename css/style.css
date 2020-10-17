@@ -11,6 +11,7 @@
 --html-academy-color:#231F20;
 --basic-background-color: #888888;
 --black:#000000;
+--active-button:#EBEBEB;
 /*catalog colors*/
 --line-color: #E5E5E5;
 --color-item:#CACACA;
@@ -350,12 +351,6 @@ max-width: 290px;
 }
 /*концовка  жильё еда сувениры блока №1*/
 
-
-
-
-
-
-
 /*форма и кнопка поиска гостиницы*/
 .appointment
 {
@@ -415,104 +410,143 @@ margin-right: 320px;
 }
 .form-check-in
 {
-
 width:568px;
 height:395px;
 position: absolute;
-background-color: slateblue;
+background-color: var(--main-background-color);
 /*display:;*/
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items:center;
 
 }
 .check-in
 {
-  display:flex;
-
-  align-items:center;
-  justify-content: center;
-  width:400px;
-  height:38px;
-  margin-bottom:50px;
-  background-color:palevioletred;
+display: flex;
+justify-content: center;
+align-items: center;
+width:458px;
+height:38px;
+margin-bottom: 29px;
+margin-left:60px;
 }
 .check-in label
 {
-width:90px;
+display:flex;
+width:100px;
+font-size: 14px;
+font-weight: 700;
 }
 .check-in input
 {
-  display:flex;
-  width:200px;
-  height:38px;
-  opacity:1;
+display:flex;
+width:346px;
+height:38px;
 }
-.check-in input:optional
+input[value="24 апреля 2017"]
 {
-  opacity: 1;
-  background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
+  font-weight: 700;
 }
-
-
 .check-on
 {
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
-  width:568px;
-  height:20px;
-  margin-bottom:50px;
-  background-color:palevioletred;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+width:458px;
+height:38px;
+margin-bottom: 29px;
+margin-left:60px;
 }
 .check-on label
 {
-  width:400px;
+display:flex;
+width:100px;
+font-weight: 700;
+}
+.check-on input
+{
+display:flex;
+width:346px;
+height:38px;
+}
+.check-in input:optional,.check-on input:optional
+{
+background-image: url(../img/calendar.svg);
+background-repeat: no-repeat;
+background-position: 95% 50%;
+font-size: 14px;
+text-transform: uppercase;
+font-weight: 700;
+background-color:var(--basic-light-blue);
+}
+.check-in input:optional:hover,.check-on input:optional:hover
+{
+  background-color: var(--active-button);
+}
+.check-in input:optional:focus,.check-on input:optional:focus
+{
+  background-color: var(--line-color);
 }
 /* взрослые, дети*/
-
 .people
 {
 display: flex;
-width:568px;
-  height:100px;
-
-}
-.adult
-{
-width:114px;
+width:458px;
 height:38px;
-margin-right:50px;
-}
-.adult input[type="number"],.children input[type="number"]
-{
-  opacity:0;
+margin-left: 55px;
+justify-content: space-between;
+margin-bottom: 54px;
+font-weight: 700;
 }
 .pic-form
 {
-width:40px;
+display: flex;
+background-color:var(--basic-light-blue);
+width:114px;
+height:38px;
+margin-left:45px;
+}
+.pic-form-1
+{
+display: flex;
 background-color:var(--basic-light-blue);
 width:114px;
 height:38px;
 }
-.pic-form-plus
+.adult, .children
 {
-width:12px;
-height:3px;
-background-color:var(--basic-light-gray);
+display:flex;
+align-items: center;
+width:14px;
+height:38px;
 }
-.children
+.pic-form input[type="number"],.pic-form-1 input[type="number"]
+{
+display:none;
+}
+.pic-form-minus
 {
 width:114px;
 height:38px;
-margin-bottom:50px;
+background-image: url(../img/minus.png);
+background-repeat: no-repeat;
+position:relative;
+background-position: 25% 50%;
 }
-.children label
+.pic-form-plus
 {
-width:400px;
+width:114px;
+height:38px;
+background-image: url(../img/plus.png);
+background-repeat: no-repeat;
+position:relative;
+background-position: 75% 50%;
+}
+.pic-form span, .pic-form-1 span
+{
+display:flex;
+align-items: center;
 }
 /* завершение взрослые,дети*/
 .form-check-in-submit
@@ -533,9 +567,7 @@ display:inline;
 display: flex;
 flex-direction: column;
 justify-content: center;
-
 }
-
 /*карта*/
 .map
 {
@@ -570,11 +602,10 @@ background-color:var(--basic-reasons-blue);
 width:50px;
 height:50px;
 margin-right:6px;
-
 }
 .yout
 {
-  margin-right:0;
+margin-right:0;
 }
 .social-link:hover
 {
