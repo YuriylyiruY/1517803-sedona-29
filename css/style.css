@@ -50,6 +50,7 @@ min-height:100%;
 width:1200px;
 margin:0 auto;
 box-shadow:  0 5px 15px rgba(0, 1, 1, 0.2);
+background-color:var(--main-background-color);
 }
 .page-footer
 {
@@ -90,41 +91,38 @@ text-transform:uppercase;
 list-style:none;
 font-size:inherit;
 font-weight:700;
-display:flex;
 padding-left:72px;
 padding-right:72px;
+display: flex;
+
 }
 .site-navigation-item
 {
-color:var(--black);
+width:25%;
+mi
 }
 .active
 {
 color:var(--basic-gray);
 }
-.site-navigation-item:hover
+.text-write
+{
+display: block;
+color:var(--black);
+padding-bottom:14px;
+padding-top:16px;
+}
+.text-write:hover
 {
 color:var(--basic-reasons-blue);
 }
-.site-navigation-item:active
+.text-write:active
 {
 color:var(--basic-light-gray);
 }
-.text-write
-{
-display:flex;
-justify-content: flex-start;
-align-items: center;
-width:264px;
-height:56px;
-}
 .item-text-write
 {
-display:flex;
-justify-content: flex-end;
-align-items: center;
-width:264px;
-height:56px;
+text-align: right;
 }
 .promo
 {
@@ -134,6 +132,8 @@ background-repeat: no-repeat;
 min-height:509px;
 align-items:center;
 justify-content:center;
+position:relative;
+
 }
 .promo::after
 {
@@ -142,20 +142,13 @@ width:1200px;
 height: 57px;
 background-image:url(../img/shape.svg);
 position: absolute;
-top:509px;
-left:300px;
+left:0;
+bottom:-1px;
 }
 .housing
 {
 display:flex;
 align-content:space-around;
-}
-.sedona-fife-reasons
-{
-display: flex;
-width:1200px;
-height:214px;
-flex-direction: column;
 }
 .sedona-town
 {
@@ -175,26 +168,31 @@ width:1200px;
 height:26px;
 color:var(--basic-letters);
 text-align:center;
+padding-bottom: 30px;
 }
 /*5 больших блоков в центре*/
-.features-list
+.reasons-list
 {
 display:flex;
 flex-wrap:wrap;
 list-style:none;
 }
-.features-list .features-item
+.reasons-item
 {
 display:flex;
 flex-wrap:wrap;
-}
-.feature-info
-{
-display:flex;
 width:1200px;
 height:256px;
 }
-.feature-header-white, .feature-header-gray
+.reasons-item-1
+{
+  display:flex;
+flex-wrap:wrap;
+width:1200px;
+height:512px;
+}
+
+.reasons-info
 {
 font-size:21px;
 line-height:21px;
@@ -205,16 +203,16 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 width:400px;
-height:256px;
+min-height:256px;
 }
-.feature-number,.feature-description
+.reasons-number,.reasons-description
 {
 font-size:14px;
 line-height:21px;
 font-weight:400;
 text-align:center;
 }
-.feature-description
+.reasons-description
 {
 margin-top: 36px;
 margin-bottom: 54px;
@@ -228,10 +226,10 @@ max-width:257px;
 {
 max-width:276px;
 }
-.feature-img-wrap
+.reasons-img-wrap
 {
 display:flex;
-height:256px;
+min-height:256px;
 width:800px;
 justify-content: flex-end;
 }
@@ -260,35 +258,20 @@ color: var(--main-background-color);
 background-color: var(--basic-reasons-gray);
 color:var(--basic-letters);
 }
-.bg-white
-{
-background-color:var(--main-background-color);
-}
-.features-list .conversely
+
+.reverse
 {
 display:flex;
 flex-direction: row-reverse;
 }
-.features-list .features-item-gray
-{
-display:flex;
-min-height:257px;
-width:400px;
-}
-.feature-header-gray,.advantages-item,.advantages-title
-{
-font-size:21px;
-line-height:21px;
-font-weight:700;
-text-align:center;
-color:var(--black);
-}
-.features-item,.advantages-description
+
+
+.reasons-item,.advantages-description
 {
 font-size:14px;
 color:var(--basic-letters);
 }
-.feature-header-gray h3
+.reasons-header-gray h3
 {
 max-width: 160px;
 text-align:center;
@@ -301,42 +284,49 @@ margin-bottom:31px;
 display:flex;
 list-style:none;
 }
-.housing,.food,.souvenirs
+.advantages-item
 {
-display: flex;
-flex-direction:column;
-height:330px;
 width:400px;
+height:330px;
+background-color: lemonchiffon;
 }
-.picture-housing
+.advantages-title
+{
+font-size:21px;
+line-height:21px;
+font-weight:700;
+padding:40px;
+color:var(--black);
+
+}
+.housing
 {
 background-image: url(../img/icon-1.svg);
 background-repeat: no-repeat;
-background-position: center;
-margin-top:60px;
-width:400px;
-height: 72px;
-margin-bottom: 29px;
+padding-left: 55px;
+width:40px;
+height: 33px;
+background-color: lavenderblush;
+padding-top:-22px;
 }
-.picture-food
+.advantages-item.food
 {
 background-image: url(../img/icon-3.svg);
 background-repeat: no-repeat;
 background-position: center;
-margin-top:60px;
 width:400px;
-height: 70px;
+height: 330px;
 margin-bottom: 29px;
+background-color: ivory;
 }
-.picture-souvenirs
+.advantages-item.souvenirs
 {
 background-image: url(../img/icon-2.svg);
 background-repeat: no-repeat;
 background-position: center;
-margin-top:55px;
 width:400px;
-height: 77px;
-margin-bottom: 29px;
+height: 330px;
+background-color: ivory;
 }
 .advantages-description
 {
