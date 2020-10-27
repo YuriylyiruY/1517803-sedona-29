@@ -1048,9 +1048,13 @@ input[type="checkbox"]:disabled+span {
   font-size: 12px;
   line-height: 18px;
   text-align: left;
+  text-decoration: underline;
   color: var(--basic-light-gray);
 }
-
+.und-line{
+  text-decoration: none;
+  color: var(--basic-reasons-blue);
+}
 .sorting-item:hover {
   color: var(--basic-reasons-blue);
 }
@@ -1099,7 +1103,7 @@ input[type="checkbox"]:disabled+span {
 .reiting-pic {
   height: 30px;
   background: url(../img/star.svg);
-  background-repeat: repeat-x;
+  background-repeat: repeat space;
 }
 
 .stars-four {
@@ -1115,7 +1119,7 @@ input[type="checkbox"]:disabled+span {
 }
 
 .result-info,
-.result-header {
+.result-header,.result-search {
   font-size: 22px;
   line-height: 21px;
   font-weight: 700;
@@ -1199,13 +1203,14 @@ input[type="checkbox"]:disabled+span {
 .unite-first-result-section {
   display: flex;
   width: 1200px;
+  box-sizing: border-box;
+  padding:35px 72px;
 }
 
 .result-search {
   display: flex;
-  height: 87px;
+
   width: 166px;
-  margin-left: 73px;
   align-items: center;
 }
 
@@ -1215,7 +1220,7 @@ input[type="checkbox"]:disabled+span {
 
 .sorting {
   display: flex;
-  height: 87px;
+
   width: 100px;
   margin-left: 0px;
   align-items: center;
@@ -1223,22 +1228,18 @@ input[type="checkbox"]:disabled+span {
 
 .result-search-for {
   display: flex;
-  height: 87px;
+
   width: 270px;
   align-items: center;
   justify-content: space-around;
   list-style: none;
 }
 
-.block-empty {
-  display: flex;
-  height: 87px;
-  width: 500px;
-}
+
 
 .result-searching-arrow {
   display: flex;
-  height: 87px;
+  margin-left: auto;
   width: 20px;
   align-items: center;
   justify-content: space-between;
@@ -1254,36 +1255,31 @@ input[type="checkbox"]:disabled+span {
 
 .result-search-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding:30px 72px;
 }
 
 .block-pic {
-  display: flex;
-  width: 208px;
-  height: 151px;
-  align-items: flex-start;
-  justify-content: flex-end;
+
   margin-right: 30px;
 }
 
 .block-info {
   display: flex;
   width: 258px;
-  height: 151px;
   flex-wrap: wrap;
 }
-
+.result-img
+{
+  display:block;
+}
 .result-info-link {
-  display: flex;
-  width: 258px;
-  height: 20px;
+
 }
 
 .block-reiting {
   display: flex;
-  width: 631px;
-  height: 140px;
+ margin-left: auto;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-end;
@@ -1295,6 +1291,7 @@ input[type="checkbox"]:disabled+span {
 
 .column-1 {
   width: 115px;
+  height:120px;
 }
 
 .column-2 {
