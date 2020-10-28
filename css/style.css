@@ -250,20 +250,18 @@ margin-bottom: 33px;
   text-align: center;
 }
 
-
-
 .realy-town {
-  text-align: center;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  /*width: 149px;
- /* padding-left: 79px;*/
+  margin-left:103px;
+  margin-bottom:33px;
+  width:122px;
 }
 
 .realy-town-add {
   width: 193px;
-  padding-left: 59px;
+  margin-left: 67px;
 }
 
 .realy-town-col {
@@ -272,8 +270,6 @@ margin-bottom: 33px;
 }
 
 .number {
-  /*padding-top: 33px;
-  padding-bottom: 33px;*/
   margin-bottom: 25px;
 }
 
