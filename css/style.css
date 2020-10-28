@@ -180,29 +180,20 @@ button {
   text-align: center;
   padding-bottom: 30px;
 }
-
+.reasons-list
+{
+  display:flex;
+  flex-wrap:wrap;
+}
 .reasons-item {
   display: flex;
   flex-wrap: wrap;
+  text-align:center;
+  box-sizing: border-box;
 }
 
 .reasons-item-add {
   flex-wrap: nowrap;
-}
-
-.reasons-item-g {
-  box-sizing: border-box;
-  width: 400px;
-  float: left;
-  color: var(--basic-letters);
-  text-align: center;
-  list-style: none;
-  padding-bottom: 28px;
-}
-
-.reasons-item-g h3 {
-  padding-left: 31%;
-  padding-top: 40px;
 }
 
 .blue-block {
@@ -214,11 +205,20 @@ button {
 .gray-block {
   background-color: var(--basic-reasons-gray);
   color: var(--basic-letters);
-}
+  width: 400px;
+  list-style: none;
+  flex-direction:column;
+  padding:40px 52px 40px;
 
+}
+.gray-block h3{
+  width:150px;
+  margin:0 auto;
+margin-bottom: 33px;
+}
 .reasons-info {
   display: flex;
-  display: column;
+
 }
 
 .wrap-block {
@@ -233,9 +233,8 @@ button {
 }
 
 .img-wrap {
-  display: flex;
   width: 800px;
-  justify-content: end;
+  height: 256px;
 }
 
 .number,
@@ -251,18 +250,15 @@ button {
   text-align: center;
 }
 
-.reasons-description-g {
-  width: 267px;
-  padding: 0 69px;
-}
+
 
 .realy-town {
   text-align: center;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  width: 149px;
-  padding-left: 79px;
+  /*width: 149px;
+ /* padding-left: 79px;*/
 }
 
 .realy-town-add {
@@ -276,8 +272,9 @@ button {
 }
 
 .number {
-  padding-top: 33px;
-  padding-bottom: 33px;
+  /*padding-top: 33px;
+  padding-bottom: 33px;*/
+  margin-bottom: 25px;
 }
 
 .advantages-list {
@@ -367,6 +364,7 @@ button {
 .appointment-button {
   width: 568px;
   height: 86px;
+  cursor: pointer;
 }
 
 .appointment-button[type="button"] {
@@ -400,12 +398,15 @@ button {
   padding: 50px;
   background-color: var(--main-background-color);
   position: absolute;
+  display: none;
 }
 
 .check-in {
   display: flex;
   align-items: center;
   margin-bottom: 29px;
+  position: relative;
+  justify-content: space-between;
 }
 
 .check-in label {
@@ -417,6 +418,7 @@ button {
 .check-in input {
   width: 346px;
   height: 38px;
+  padding-left: 25px;
 }
 
 input[value="24 апреля 2017"] {
@@ -427,6 +429,8 @@ input[value="24 апреля 2017"] {
   display: flex;
   align-items: center;
   margin-bottom: 29px;
+  position: relative;
+  justify-content: space-between;
 }
 
 .check-on label {
@@ -437,14 +441,19 @@ input[value="24 апреля 2017"] {
 .check-on input {
   width: 346px;
   height: 38px;
+  padding-left: 25px;
+
 }
 
 .calendar {
+  padding:0;
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 0px;
+  right: 10px;
   cursor: pointer;
+  border:none;
+  background-color: transparent;
 }
 
 .calendar:hover path[fill="#A9A9A9"] {
@@ -477,6 +486,11 @@ input[value="24 апреля 2017"] {
   border: none;
 }
 
+.check-in input:optional:active,
+.check-on input:optional:active {
+  background-color: var(--main-background-color);
+  border: none;
+}
 /* взрослые, дети*/
 .people {
   display: flex;
@@ -489,24 +503,38 @@ input[value="24 апреля 2017"] {
 
 .pic-form {
   display: flex;
-  background-color: var(--basic-light-blue);
+ /* background-color: var(--basic-light-blue);*/
   width: 105px;
   height: 35px;
   margin-left: 79px;
   box-sizing: border-box;
 }
 
-input[value="0"]:hover,
-input[value="2"]:hover {
-  position: relative;
-  background-color: var(--active-button);
+.pic-form input[value="0"]:optional:hover,
+.pic-form-next input[value="2"]:optional:hover
+{
+  background-color:var(--active-button) ;
 }
-
-.input[value="0"]:focus,
-input[value="2"]:focus {
+.pic-form input[value="0"]:optional:active,
+.pic-form-next input[value="2"]:optional:active,
+.pic-form input[value="0"]:optional:focus,
+.pic-form-next input[value="2"]:optional:focus
+{
   background-color: var(--main-background-color);
 }
-
+.pic-form-minus:hover,.pic-form-plus:hover
+{
+background-color: var(--active-button);
+}
+.pic-form-minus:active,.pic-form-plus:active
+{
+background-color: var(--main-background-color);
+}
+.pic-form-minus:focus,.pic-form-plus:focus
+{
+  background-color: var(--main-background-color);
+  border:2px solid var(--black);
+  }
 .pic-form-next {
   display: flex;
   background-color: var(--basic-light-blue);
@@ -554,6 +582,7 @@ input[value="2"]:focus {
   border: none;
   outline: none;
   background-color: var(--basic-light-blue);
+  cursor: pointer;
 }
 
 .pic-form-minus:hover {
@@ -576,6 +605,7 @@ input[value="2"]:focus {
   border: none;
   outline: none;
   background-color: var(--basic-light-blue);
+  cursor: pointer;
 }
 
 .pic-form-plus:hover {
@@ -614,6 +644,7 @@ input[value="2"]:focus {
   font-size: 21px;
   line-height: 26px;
   border: none;
+  cursor: pointer;
 }
 
 .form-check-in-submit:hover {
@@ -632,18 +663,11 @@ input[value="2"]:focus {
   outline: none;
 }
 
-/*.appointment-button+.form-check-in {
+.appointment-button+.form-check-in {
   display: none;
-}*/
-.form-check-in {
-  display: block;
 }
 
-.modal-show {
-  display: block;
-}
-
-/*.appointment-button:hover+.form-check-in,
+.appointment-button:hover+.form-check-in,
 .form-check-in:hover {
   display: block;
 }
@@ -662,7 +686,22 @@ input[value="2"]:focus {
   color: var(--black);
   height: 0px;
 }
+.social-link
+{
+  display: flex;
+  width: 50px;
+  height: 50px;
+position: relative;
 
+}
+.social-link:hover::before
+{
+  opacity: 1;
+}
+.social-link:active::before
+{
+  opacity: 0.5;
+}
 .socials-list {
   padding: 0;
   margin: 0;
@@ -685,65 +724,40 @@ input[value="2"]:focus {
   margin-right: 0;
 }
 
-.vk {
-  display: flex;
-  width: 50px;
-  height: 50px;
+.vk::before{
+  width: 17px;
+  height: 17px;
+  margin:auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url(../img/twitter2.svg);
   opacity: 0.8;
+  content:"";
 }
 
-.vk:hover {
-  background-image: url(../img/twitter2.svg);
-  opacity: 1;
-}
-
-.vk:active {
-  background-image: url(../img/twitter2.svg);
-  opacity: 0.5;
-}
-
-.fb {
+.fb::before {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 12px;
+  height: 22px;
+  margin: auto;
   background-repeat: no-repeat;
   background-image: url(../img/fb-icon.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   opacity: 0.8;
+  content:"";
 }
 
-.fb:hover {
-  background-image: url(../img/fb-icon.svg);
-  opacity: 1;
-}
-
-.fb:active {
-  background-image: url(../img/fb-icon.svg);
-  opacity: 0.5;
-}
-
-.youtube {
+.youtube::before {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 16px;
+  margin: auto;
   background-repeat: no-repeat;
   background-image: url(../img/youtube.svg);
   background-position: 50% 50%;
   opacity: 0.8;
-}
-
-.youtube:hover {
-  background-image: url(../img/youtube.svg);
-  opacity: 1;
-}
-
-.youtube:active {
-  background-image: url(../img/youtube.svg);
-  opacity: 0.5;
+  content:"";
 }
 
 .copyright-link {
@@ -1051,10 +1065,12 @@ input[type="checkbox"]:disabled+span {
   text-decoration: underline;
   color: var(--basic-light-gray);
 }
-.und-line{
+
+.und-line {
   text-decoration: none;
   color: var(--basic-reasons-blue);
 }
+
 .sorting-item:hover {
   color: var(--basic-reasons-blue);
 }
@@ -1119,7 +1135,8 @@ input[type="checkbox"]:disabled+span {
 }
 
 .result-info,
-.result-header,.result-search {
+.result-header,
+.result-search {
   font-size: 22px;
   line-height: 21px;
   font-weight: 700;
@@ -1204,7 +1221,7 @@ input[type="checkbox"]:disabled+span {
   display: flex;
   width: 1200px;
   box-sizing: border-box;
-  padding:35px 72px;
+  padding: 35px 72px;
 }
 
 .result-search {
@@ -1256,7 +1273,7 @@ input[type="checkbox"]:disabled+span {
 .result-search-list {
   display: flex;
   box-sizing: border-box;
-  padding:30px 72px;
+  padding: 30px 72px;
 }
 
 .block-pic {
@@ -1269,32 +1286,31 @@ input[type="checkbox"]:disabled+span {
   width: 258px;
   flex-wrap: wrap;
 }
-.result-img
-{
-  display:block;
-}
-.result-info-link {
 
+.result-img {
+  display: block;
 }
+
+.result-info-link {}
 
 .block-reiting {
   display: flex;
- margin-left: auto;
+  margin-left: auto;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .reiting {
-  margin-bottom: 50px;
+
 }
 
-.column-1 {
+.column-left {
   width: 115px;
-  height:120px;
+
 }
 
-.column-2 {
+.column-right {
   width: 130px;
 }
 
