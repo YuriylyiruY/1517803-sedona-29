@@ -22,7 +22,7 @@
   --gray-gray-gray: #503E33;
   --color-gray-footer: #BDBBBC;
   --color-for-toggle: #ABABAB;
-  --color-hotels-brown:#756357;
+  --color-hotels-brown: #756357;
 }
 
 .visually-hidden {
@@ -78,7 +78,8 @@ h6 {
 .page-footer {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 11;
 }
 
 .logo {
@@ -133,9 +134,13 @@ button {
 .site-nav-link:active {
   color: var(--basic-light-gray);
 }
-.current,.current:hover,.current:active{
-color:var(--color-hotels-brown);
+
+.current,
+.current:hover,
+.current:active {
+  color: var(--color-hotels-brown);
 }
+
 .item-text-write {
   text-align: right;
 
@@ -445,7 +450,7 @@ input[value="24 апреля 2017"] {
   width: 346px;
   height: 38px;
   padding-left: 25px;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .calendar {
@@ -486,9 +491,9 @@ box-sizing: border-box;
 
 .check-in input[value]:focus,
 .check-on input[value]:focus {
- background-color: var(--main-background-color);
- outline:none;
- border: 3px solid var(--line-color);
+  background-color: var(--main-background-color);
+  outline: none;
+  border: 3px solid var(--line-color);
 }
 
 .check-in input[value]:active,
@@ -506,29 +511,34 @@ box-sizing: border-box;
   margin-bottom: 54px;
   font-weight: 700;
 }
-input[id="amount-adult"]{
-  width:35px;
-  padding:0;
-  border:0;
-  height:100%;
+
+input[id="amount-adult"] {
+  width: 35px;
+  padding: 0;
+  border: 0;
+  height: 100%;
   text-align: center;
   background-color: var(--basic-light-blue);
 }
-input[id="amount-child"]{
-  width:35px;
-  padding:0;
-  border:0;
-  height:100%;
+
+input[id="amount-child"] {
+  width: 35px;
+  padding: 0;
+  border: 0;
+  height: 100%;
   text-align: center;
   background-color: var(--basic-light-blue);
 }
-.adults label{
+
+.adults label {
   margin-right: auto;
 }
-.children label{
+
+.children label {
   margin-right: auto;
-  margin-left:40px;
+  margin-left: 40px;
 }
+
 .pic-form {
   display: flex;
   /* background-color: var(--basic-light-blue);*/
@@ -552,10 +562,11 @@ input[value="2"]:optional:active {
 
 input[value="0"]:optional:focus,
 input[value="2"]:optional:focus {
-  outline:none;
+  outline: none;
   background-color: var(--main-background-color);
   border: 3px solid var(--line-color);
 }
+
 .pic-form-minus:hover,
 .pic-form-plus:hover {
   background-color: var(--active-button);
@@ -585,13 +596,15 @@ input[value="2"]:optional:focus {
 .children {
   display: flex;
   align-items: center;
- /* width: 14px;
+  /* width: 14px;
   height: 38px;*/
-  width:50%;
-  padding-right:15px;
+  width: 50%;
+  padding-right: 15px;
 }
-.children
-{padding-right: 0;}
+
+.children {
+  padding-right: 0;
+}
 
 
 .pic-form input[type="text"],
@@ -703,7 +716,7 @@ input[value="2"]:optional:focus {
 
 .appointment-button+.form-check-in {
   /*display: none;*/
-  display:block;
+  display: block;
 }
 
 .appointment-button:hover+.form-check-in,
@@ -713,8 +726,10 @@ input[value="2"]:optional:focus {
 
 /*карта*/
 .map {
+  display: block;
   min-height: 593px;
   margin-bottom: -121px;
+  z-index: 1;
 }
 
 /*футер*/
@@ -854,12 +869,12 @@ input[value="2"]:optional:focus {
 
 /*страница каталога*/
 /*форма 2*/
-.search-form-block
-{
+.search-form-block {
   background-image: url(../img/filter-1.jpg);
   min-height: 218px;
-  padding:20px 72px 0;
+  padding: 20px 72px 0;
 }
+
 .search-form {
 
   /*width: 1200px;
@@ -867,7 +882,7 @@ input[value="2"]:optional:focus {
   grid-template-columns: 72px 254px 274px 528px 72px;
   padding-top: 20px;*/
   box-sizing: border-box;
-  display:flex;
+  display: flex;
 }
 
 .infrastructure {
@@ -891,50 +906,42 @@ fieldset {
   padding: 0;
 }
 
-.inf-check,
-.kind-check {
-  width: 32px;
-  /* Ширина рисунка */
-  height: 26px;
-  /* Высота рисунка */
-  display: block;
-  /* Блочный элемент */
-  position: relative;
-  /* Относительное позиционирование */
-}
-
 .search-checkbox {
   opacity: 0;
 }
 
-input[type="checkbox"]+span {
-  position: absolute;
-  /* Абсолютное позиционирование */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/checkbox-off.svg) no-repeat;
-  /* Фоновый рисунок */
-  cursor: pointer;
-  /* Курсор в виде руки */
+.inf-check,
+.kind-check {
+  display: flex;
+  width: 27px;
+  height: 23px;
+  position: relative;
 }
 
-input[type="checkbox"]:checked+span {
-  position: absolute;
-  /* Абсолютное позиционирование */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/checkbox-on.svg) no-repeat;
-  /* Фоновый рисунок */
-  cursor: pointer;
-  /* Курсор в виде руки */
+.kind-of-housing {
+  margin-left: 105px;
 }
 
-input[type="checkbox"]:disabled+span {
-  opacity: 0.5;
+.search-checkbox+.inf-check,
+.search-checkbox+.kind-check {
+  background-image: url(../img/checkbox-on.png);
+  width: 27px;
+  height: 23px;
+  margin: auto;
+  background-repeat: no-repeat;
+  content: "";
+  cursor: pointer;
+}
+
+.search-checkbox:checked+.inf-check,
+.search-checkbox:checked+.kind-check {
+  background-image: url(../img/checkbox-off.png);
+  width: 27px;
+  height: 23px;
+  margin: auto;
+  background-repeat: no-repeat;
+  content: "";
+  cursor: pointer;
 }
 
 .kind-of-housing {
@@ -954,14 +961,6 @@ input[type="checkbox"]:disabled+span {
 
 .price-housing {
   margin-left: auto;
-  /* grid-column-start: 4;
-  grid-column-end: 5;
- width: 528px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  color: var(--main-background-color);*/
 }
 
 .price-housing legend {
@@ -969,7 +968,6 @@ input[type="checkbox"]:disabled+span {
   font-weight: 700;
   width: 317px;
   margin-top: 7px;
-  /*margin-left: 230px;*/
   color: var(--main-background-color);
 }
 
@@ -1065,7 +1063,7 @@ input[value="показать"] {
   /*margin-left: 301px;*/
   width: 137px;
   height: 36px;
- /* margin-left: 320px;*/
+  /* margin-left: 320px;*/
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--main-background-color);
@@ -1148,7 +1146,7 @@ input[value="показать"]:hover {
   background-image: url(../img/icon-up-2.svg);
 }
 
- /*.down:hover{
+/*.down:hover{
   width: 10px;
   height: 10px;
   background-image: url(../img/icon-down.svg);
@@ -1245,7 +1243,7 @@ input[value="показать"]:hover {
 
 .result-submit {
   /*padding: 3px 17px 3px 16px;*/
-  height:30px;
+  height: 30px;
   width: 142px;
   line-height: 21px;
   text-align: center;
@@ -1357,7 +1355,9 @@ input[value="показать"]:hover {
   align-items: flex-end;
 }
 
-.reiting { text-align: center;}
+.reiting {
+  text-align: center;
+}
 
 .column-left {
   /*width: 115px;*/
