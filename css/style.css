@@ -876,18 +876,11 @@ input[value="2"]:optional:focus {
 }
 
 .search-form {
-
-  /*width: 1200px;
-  display: grid;
-  grid-template-columns: 72px 254px 274px 528px 72px;
-  padding-top: 20px;*/
   box-sizing: border-box;
   display: flex;
 }
 
 .infrastructure {
-  grid-column-start: 2;
-  grid-column-end: 3;
   height: 190px;
   display: flex;
   flex-direction: column;
@@ -924,7 +917,7 @@ fieldset {
 
 .search-checkbox+.inf-check,
 .search-checkbox+.kind-check {
-  background-image: url(../img/checkbox-on.png);
+  background-image: url(../img/checkbox-off.png);
   width: 27px;
   height: 23px;
   margin: auto;
@@ -935,7 +928,7 @@ fieldset {
 
 .search-checkbox:checked+.inf-check,
 .search-checkbox:checked+.kind-check {
-  background-image: url(../img/checkbox-off.png);
+  background-image: url(../img/checkbox-on.png);
   width: 27px;
   height: 23px;
   margin: auto;
@@ -945,8 +938,7 @@ fieldset {
 }
 
 .kind-of-housing {
-  grid-column-start: 3;
-  grid-column-end: 4;
+
   height: 190px;
   display: flex;
   flex-direction: column;
@@ -961,6 +953,11 @@ fieldset {
 
 .price-housing {
   margin-left: auto;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
 .price-housing legend {
@@ -974,8 +971,8 @@ fieldset {
 .price {
   width: 297px;
   height: 30px;
-  /*margin-left: 230px;*/
-  margin-top: 8px;
+  /* margin-top: 8px;
+  margin-bottom:20px; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1048,7 +1045,7 @@ fieldset {
 }
 
 .toggles:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .toggle-min {
@@ -1060,11 +1057,9 @@ fieldset {
 }
 
 input[value="показать"] {
-  /*margin-left: 301px;*/
   width: 137px;
   height: 36px;
-  /* margin-left: 320px;*/
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-transform: uppercase;
   color: var(--main-background-color);
   font-size: inherit;
@@ -1119,18 +1114,22 @@ input[value="показать"]:hover {
   color: var(--basic-light-gray);
 }
 
-.und-line {
-  text-decoration: none;
+.und-line{
   color: var(--basic-reasons-blue);
+ text-decoration:none;
 }
+
 
 .sorting-item:hover {
   color: var(--basic-reasons-blue);
+  text-decoration: underline;
 }
 
 .sorting-item:active {
   color: var(--black);
+  text-decoration: none;
 }
+
 
 .up {
   width: 10px;
@@ -1146,19 +1145,19 @@ input[value="показать"]:hover {
   background-image: url(../img/icon-up-2.svg);
 }
 
-/*.down:hover{
+.down:hover {
   width: 10px;
   height: 10px;
-  background-image: url(../img/icon-down.svg);
+  background-image: url(../img/icon-down-1.svg);
   margin-left: 10px;
 }
 
- .down:active{
+.down:active {
   background-image: url(../img/icon-down-2.svg);
-}*/
+}
 
 .down {
-  background-image: url(../img/icon-down-1.svg);
+  background-image: url(../img/icon-down-2.svg);
   width: 10px;
   height: 10px;
   margin-left: 10px;
