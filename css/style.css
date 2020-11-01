@@ -474,19 +474,19 @@ input[value="24 апреля 2017"] {
 }
 
 
-.check-in input:optional,
-.check-on input:optional {
+.check-in input,
+.check-on input {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   background-color: var(--basic-light-blue);
-  border: none;
+  border: 3px solid transparent;
 }
 
 .check-in input[value]:hover,
 .check-on input[value]:hover {
   background-color: var(--active-button);
-  border: none;
+  border: 3px solid transparent;
 }
 
 .check-in input[value]:focus,
@@ -494,6 +494,7 @@ input[value="24 апреля 2017"] {
   background-color: var(--main-background-color);
   outline: none;
   border: 3px solid var(--line-color);
+
 }
 
 .check-in input[value]:active,
@@ -506,7 +507,6 @@ input[value="24 апреля 2017"] {
 .people {
   display: flex;
   width: 100%;
-  /*height: 38px;*/
   justify-content: space-between;
   margin-bottom: 54px;
   font-weight: 700;
@@ -541,30 +541,36 @@ input[id="amount-child"] {
 
 .pic-form {
   display: flex;
-  /* background-color: var(--basic-light-blue);*/
-  /*width: 105px;
-  height: 35px;*/
   margin-left: 79px;
-  /*box-sizing: border-box;*/
+}
+
+input[value="0"],
+input[value="2"] {
+  outline: 3px solid transparent;
+  outline-offset: -3px;
 
 }
 
-input[value="0"]:optional:hover,
-input[value="2"]:optional:hover {
+input[value="0"]:hover,
+input[value="2"]:hover {
   background-color: var(--active-button);
+  outline: 2px solid transparent;
+  outline-offset: -3px;
 }
 
-input[value="0"]:optional:active,
-input[value="2"]:optional:active {
+input[value="0"]:active,
+input[value="2"]:active {
   background-color: var(--main-background-color);
-
+  outline: 3px solid transparent;
+  outline-offset: -3px;
 }
 
-input[value="0"]:optional:focus,
-input[value="2"]:optional:focus {
+input[value="0"]:focus,
+input[value="2"]:focus {
   outline: none;
   background-color: var(--main-background-color);
-  border: 3px solid var(--line-color);
+  outline: 3px solid var(--line-color);
+  outline-offset: -3px;
 }
 
 .pic-form-minus:hover,
@@ -710,7 +716,8 @@ input[value="2"]:optional:focus {
 }
 
 .form-check-in-submit:focus {
-  border: none;
+  background-color: var(--color-blue-blue);
+  /* border: none; */
   outline: none;
 }
 
@@ -816,7 +823,6 @@ input[value="2"]:optional:focus {
 }
 
 .copyright-link {
-
   color: var(--html-academy-color);
   margin-bottom: 10px;
 }
@@ -899,42 +905,43 @@ fieldset {
   padding: 0;
 }
 
-.search-checkbox {
-  opacity: 0;
-}
-
-.inf-check,
-.kind-check {
+.inf-check {
   display: flex;
-  width: 27px;
-  height: 23px;
   position: relative;
+  padding-left: 35px;
 }
 
 .kind-of-housing {
   margin-left: 105px;
 }
 
-.search-checkbox+.inf-check,
-.search-checkbox+.kind-check {
-  background-image: url(../img/checkbox-off.png);
+.search-checkbox+.inf-check::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
   width: 27px;
   height: 23px;
-  margin: auto;
+  background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;
-  content: "";
   cursor: pointer;
 }
 
-.search-checkbox:checked+.inf-check,
-.search-checkbox:checked+.kind-check {
-  background-image: url(../img/checkbox-on.png);
+.search-checkbox:checked+.inf-check::after {
+
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
   width: 27px;
   height: 23px;
-  margin: auto;
+  background-image: url(../img/checkbox-on.png);
   background-repeat: no-repeat;
-  content: "";
   cursor: pointer;
+}
+
+.search-checkbox:checked+.inf-check::before {
+  display: none;
 }
 
 .kind-of-housing {
@@ -971,17 +978,26 @@ fieldset {
 .price {
   width: 297px;
   height: 30px;
-  /* margin-top: 8px;
-  margin-bottom:20px; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
   border: solid 2px var(--main-background-color);
 }
 
-.price [value] {
-  opacity: 0;
-  position: fixed;
+.price [value],
+.price [value]:focus,
+.price [value]:hover,
+.price [value]:active {
+  margin-left: 5px;
+  width: 50px;
+  color: var(--main-background-color);
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+}
+
+.letter-label {
+  margin-left: 20px;
 }
 
 .price span {
@@ -1016,7 +1032,6 @@ fieldset {
   height: 34px;
   width: 297px;
   background-color: transparent;
-  /*margin-left: 230px;*/
   position: relative;
 }
 
@@ -1042,6 +1057,7 @@ fieldset {
   border: 8px solid var(--main-background-color);
   background-color: var(--color-for-toggle);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .toggles:hover {
@@ -1059,13 +1075,16 @@ fieldset {
 input[value="показать"] {
   width: 137px;
   height: 36px;
-  /* margin-bottom: 20px; */
   text-transform: uppercase;
   color: var(--main-background-color);
   font-size: inherit;
   font-weight: inherit;
   border: solid 2px var(--main-background-color);
   background-color: transparent;
+}
+
+.show {
+  margin-left: 85px;
 }
 
 input[value="показать"]:hover {
@@ -1114,9 +1133,9 @@ input[value="показать"]:hover {
   color: var(--basic-light-gray);
 }
 
-.und-line{
+.und-line {
   color: var(--basic-reasons-blue);
- text-decoration:none;
+  text-decoration: none;
 }
 
 
@@ -1130,6 +1149,12 @@ input[value="показать"]:hover {
   text-decoration: none;
 }
 
+.und-line,
+.und-line:hover,
+.und-line:active {
+  color: var(--basic-reasons-blue);
+  text-decoration: none;
+}
 
 .up {
   width: 10px;
@@ -1145,18 +1170,9 @@ input[value="показать"]:hover {
   background-image: url(../img/icon-up-2.svg);
 }
 
-.down:hover {
-  width: 10px;
-  height: 10px;
-  background-image: url(../img/icon-down-1.svg);
-  margin-left: 10px;
-}
-
+.down,
+.down:hover,
 .down:active {
-  background-image: url(../img/icon-down-2.svg);
-}
-
-.down {
   background-image: url(../img/icon-down-2.svg);
   width: 10px;
   height: 10px;
@@ -1241,7 +1257,6 @@ input[value="показать"]:hover {
 }
 
 .result-submit {
-  /*padding: 3px 17px 3px 16px;*/
   height: 30px;
   width: 142px;
   line-height: 21px;
@@ -1327,6 +1342,12 @@ input[value="показать"]:hover {
   display: flex;
   box-sizing: border-box;
   padding: 30px 72px;
+  border-top: 1px solid var(--line-color);
+
+}
+
+.line-bottom {
+  border-bottom: 1px solid var(--line-color);
 }
 
 .block-pic {
@@ -1344,8 +1365,6 @@ input[value="показать"]:hover {
   display: block;
 }
 
-.result-info-link {}
-
 .block-reiting {
   display: flex;
   margin-left: auto;
@@ -1359,14 +1378,7 @@ input[value="показать"]:hover {
 }
 
 .column-left {
-  /*width: 115px;*/
   margin-right: 5px;
-
-
-}
-
-.column-right {
-  /*width: 130px;*/
 }
 
 .for-group {
