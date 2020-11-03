@@ -127,7 +127,8 @@ button {
   margin-top: 16px;
 }
 
-.site-nav-link:hover {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--basic-reasons-blue);
 }
 
@@ -172,21 +173,18 @@ button {
 .sedona-town {
   font-size: 21px;
   font-weight: 700;
-  height: 80px;
   max-width: 444px;
   line-height: 26px;
-  margin-left: 384px;
-  margin-top: 42px;
-  margin-bottom: 16px;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 44px;
   text-align: center;
 }
 
 .five-reasons {
-  width: 1200px;
-  height: 26px;
   color: var(--basic-letters);
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 51px;
 }
 
 .reasons-list {
@@ -217,10 +215,12 @@ button {
   width: 400px;
   list-style: none;
   flex-direction: column;
-  padding: 40px 52px 40px;
+  padding: 49px 68px 40px;
 
 }
-
+.gray-block-add{
+  padding: 49px 73px 57px;
+}
 .gray-block h3 {
   width: 150px;
   margin: 0 auto;
@@ -254,19 +254,22 @@ button {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  margin-top: -3px;
 }
 
 .reasons-description-add {
   width: 301px;
   text-align: center;
+  margin-left:10px;
 }
 
 .realy-town {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  margin-left: 103px;
-  margin-bottom: 33px;
+  margin-left: 100px;
+  margin-bottom: 35px;
+  margin-top:7px;
   width: 122px;
 }
 
@@ -297,18 +300,25 @@ button {
   padding-top: 160px;
   padding-bottom: 64px;
   box-sizing: border-box;
+  margin-left: -2px;
+  font-weight: 700;
 }
 
 .advantages-title {
   font-size: 21px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+  margin-top: -4px;
+  margin-left:6px;
 }
 
 .advantages-description {
-  padding: 0 70px;
+  padding: 0 56px;
   text-align: center;
+  line-height: 1.5;
+  margin-bottom:19px;
+  margin-left:6px;
 }
 
 .advantages-description-add {
@@ -330,7 +340,7 @@ button {
 .advantages-item.picture-souvenirs {
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
-  background-position: 50% 60px;
+  background-position: 52% 52px;
 }
 
 .reverse {
@@ -355,7 +365,7 @@ button {
   height: 60px;
   justify-content: center;
   color: var(--black);
-  padding-top: 60px;
+  padding-top: 56px;
 }
 
 .trip-info {
@@ -366,6 +376,7 @@ button {
   color: var(--basic-letters);
   flex-direction: column;
   line-height: 2;
+  margin-top:-8px;
 }
 
 .appointment-button {
@@ -414,6 +425,7 @@ button {
   margin-bottom: 29px;
   position: relative;
   justify-content: space-between;
+  margin-left: 4px;
 }
 
 .check-in label {
@@ -425,7 +437,7 @@ button {
 .check-in input {
   width: 346px;
   height: 38px;
-  padding-left: 25px;
+  padding-left: 5px;
   box-sizing: border-box;
 }
 
@@ -444,12 +456,13 @@ input[value="24 апреля 2017"] {
 .check-on label {
   width: 100px;
   font-weight: 700;
+  margin-left:4px;
 }
 
 .check-on input {
   width: 346px;
   height: 38px;
-  padding-left: 25px;
+  padding-left: 4px;
   box-sizing: border-box;
 }
 
@@ -458,7 +471,7 @@ input[value="24 апреля 2017"] {
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 10px;
+  right: 13px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -532,6 +545,7 @@ input[id="amount-child"] {
 
 .adults label {
   margin-right: auto;
+  margin-left:5px;
 }
 
 .children label {
@@ -548,6 +562,7 @@ input[value="0"],
 input[value="2"] {
   outline: 3px solid transparent;
   outline-offset: -3px;
+  font-weight: 700;
 
 }
 
@@ -602,14 +617,14 @@ input[value="2"]:focus {
 .children {
   display: flex;
   align-items: center;
-  /* width: 14px;
-  height: 38px;*/
   width: 50%;
-  padding-right: 15px;
+  padding-right: 28px;
+  margin-left:1px;
 }
 
 .children {
-  padding-right: 0;
+  padding-right: 9px;
+  margin-left:-13px;
 }
 
 
@@ -642,7 +657,8 @@ input[value="2"]:focus {
   cursor: pointer;
 }
 
-.pic-form-minus:hover {
+.pic-form-minus:hover,
+.pic-form-minus:focus {
   background-image: url(../img/minus-1.svg);
 }
 
@@ -665,7 +681,8 @@ input[value="2"]:focus {
   cursor: pointer;
 }
 
-.pic-form-plus:hover {
+.pic-form-plus:hover,
+.pic-form-plus:focus {
   background-image: url(../img/union-1.svg);
 }
 
@@ -746,6 +763,8 @@ input[value="2"]:focus {
   font-weight: 700;
   color: var(--black);
   height: 0px;
+  margin-left: 48px;
+  margin-top:-9px;
 }
 
 .social-link {
@@ -756,7 +775,8 @@ input[value="2"]:focus {
 
 }
 
-.social-link:hover::before {
+.social-link:hover::before,
+.social-link:focus::before {
   opacity: 1;
 }
 
@@ -771,7 +791,7 @@ input[value="2"]:focus {
   display: flex;
   justify-content: center;
   width: 400px;
-  padding-top: 39px;
+  padding-top: 25px;
 }
 
 .socials-item {
@@ -779,12 +799,9 @@ input[value="2"]:focus {
   background-color: var(--basic-reasons-blue);
   width: 50px;
   height: 50px;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
-.yout {
-  margin-right: 0;
-}
 
 .vk::before {
   width: 17px;
@@ -793,7 +810,7 @@ input[value="2"]:focus {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url(../img/twitter2.svg);
-  opacity: 0.8;
+  opacity: 0.7;
   content: "";
 }
 
@@ -806,7 +823,7 @@ input[value="2"]:focus {
   background-image: url(../img/fb-icon.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  opacity: 0.7;
   content: "";
 }
 
@@ -818,7 +835,7 @@ input[value="2"]:focus {
   background-repeat: no-repeat;
   background-image: url(../img/youtube.svg);
   background-position: 50% 50%;
-  opacity: 0.8;
+  opacity: 0.7;
   content: "";
 }
 
@@ -827,7 +844,8 @@ input[value="2"]:focus {
   margin-bottom: 10px;
 }
 
-.copyright-link:hover {
+.copyright-link:hover,
+.copyright-link:focus {
   color: var(--basic-reasons-blue);
 }
 
@@ -855,7 +873,8 @@ input[value="2"]:focus {
   align-items: center;
   width: 400px;
   height: 121px;
-  padding-top: 28px;
+  padding-top: 23px;
+  margin-left: -1px;
 }
 
 .hashtag {
@@ -863,14 +882,17 @@ input[value="2"]:focus {
   position: relative;
   height: 20px;
   width: 150px;
-  padding-bottom: 18px;
+  padding-bottom: 39px;
+  margin-bottom:-17px;
+  margin-left:86px;
 }
 
 .phone-block {
   display: flex;
   position: relative;
   height: 20px;
-  width: 180px;
+  width: 277px;
+  margin-left: 32px;
 }
 
 /*страница каталога*/
@@ -884,6 +906,15 @@ input[value="2"]:focus {
 .search-form {
   box-sizing: border-box;
   display: flex;
+}
+
+input#pool:focus+label,
+input#parking:focus+label,
+input#wi-fi:focus+label,
+input#hotel:focus+label,
+input#motel:focus+label,
+input#apartment:focus+label {
+  outline: 1px solid;
 }
 
 .infrastructure {
@@ -1087,9 +1118,11 @@ input[value="показать"] {
   margin-left: 85px;
 }
 
-input[value="показать"]:hover {
+input[value="показать"]:hover,
+input[value="показать"]:focus {
   color: var(--black);
   background: var(--main-background-color);
+  outline: none;
 }
 
 /*завершение формы*/
@@ -1139,7 +1172,8 @@ input[value="показать"]:hover {
 }
 
 
-.sorting-item:hover {
+.sorting-item:hover,
+.sorting-item:focus {
   color: var(--basic-reasons-blue);
   text-decoration: underline;
 }
@@ -1159,10 +1193,11 @@ input[value="показать"]:hover {
 .up {
   width: 10px;
   height: 10px;
-  background-image: url(../img/icon-up.svg);
+ background-image: url(../img/icon-up.svg);
 }
 
-.up:hover {
+.up:hover,
+.up:focus {
   background-image: url(../img/icon-up-1.svg);
 }
 
@@ -1176,7 +1211,7 @@ input[value="показать"]:hover {
   background-image: url(../img/icon-down-2.svg);
   width: 10px;
   height: 10px;
-  margin-left: 10px;
+ margin-left: 10px;
 }
 
 /**/
@@ -1208,6 +1243,7 @@ input[value="показать"]:hover {
 .result-info,
 .result-header,
 .result-search {
+
   font-size: 22px;
   line-height: 21px;
   font-weight: 700;
@@ -1216,8 +1252,10 @@ input[value="показать"]:hover {
   margin-top: 0;
 }
 
-.result-info:hover {
+.result-info:hover,
+.result-info:focus {
   color: var(--basic-reasons-blue);
+
 }
 
 .result-info:active {
@@ -1225,8 +1263,6 @@ input[value="показать"]:hover {
 }
 
 .result-kind-housing {
-  /*display: flex;*/
-  /*width: 120px;*/
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -1248,8 +1284,10 @@ input[value="показать"]:hover {
   cursor: pointer;
 }
 
-.result-link:hover {
+.result-link:hover,
+.result-link:focus {
   background-color: var(--color-blue-blue);
+
 }
 
 .result-link:active {
@@ -1267,8 +1305,10 @@ input[value="показать"]:hover {
   cursor: pointer;
 }
 
-.result-submit:hover {
+.result-submit:hover,
+.result-submit:focus {
   background-color: var(--gray-gray);
+
 }
 
 .result-submit:active {
@@ -1280,7 +1320,8 @@ input[value="показать"]:hover {
   width: 75px;
   height: 15px;
   float: left;
-  margin-bottom: 0;
+  margin-bottom: 16px;
+  margin-left:-74px;
 }
 
 
@@ -1294,7 +1335,6 @@ input[value="показать"]:hover {
 
 .result-search {
   display: flex;
-
   width: 166px;
   align-items: center;
 }
@@ -1305,7 +1345,6 @@ input[value="показать"]:hover {
 
 .sorting {
   display: flex;
-
   width: 100px;
   margin-left: 0px;
   align-items: center;
@@ -1313,14 +1352,11 @@ input[value="показать"]:hover {
 
 .result-search-for {
   display: flex;
-
   width: 270px;
   align-items: center;
   justify-content: space-around;
   list-style: none;
 }
-
-
 
 .result-searching-arrow {
   display: flex;
@@ -1328,7 +1364,7 @@ input[value="показать"]:hover {
   width: 20px;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   list-style: none;
 }
 
@@ -1357,8 +1393,9 @@ input[value="показать"]:hover {
 
 .block-info {
   display: flex;
-  width: 258px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 558px;
+
 }
 
 .result-img {
