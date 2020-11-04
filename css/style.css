@@ -80,6 +80,7 @@ h6 {
   grid-template-columns: 400px 400px 400px;
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 11;
+  margin-top:6px;
 }
 
 .logo {
@@ -899,8 +900,9 @@ input[value="2"]:focus {
 /*форма 2*/
 .search-form-block {
   background-image: url(../img/filter-1.jpg);
-  min-height: 218px;
+  min-height: 200px;
   padding: 20px 72px 0;
+  margin-bottom: -9px;
 }
 
 .search-form {
@@ -918,14 +920,17 @@ input#apartment:focus+label {
 }
 
 .infrastructure {
-  height: 190px;
+  height: 176px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: var(--main-background-color);
+  margin-top: 5px;
 }
 
 .infrastructure legend {
+  display:block;
+  margin-bottom:10px;
   font-size: 16px;
   font-weight: 700;
 }
@@ -939,11 +944,11 @@ fieldset {
 .inf-check {
   display: flex;
   position: relative;
-  padding-left: 35px;
+  padding-left: 40px;
 }
 
 .kind-of-housing {
-  margin-left: 105px;
+  margin-left: 123px;
 }
 
 .search-checkbox+.inf-check::before {
@@ -977,21 +982,24 @@ fieldset {
 
 .kind-of-housing {
 
-  height: 190px;
+  height: 176px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: var(--main-background-color);
+  margin-top:5px;
 }
 
 .kind-of-housing legend {
+  display:block;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 700;
 }
 
 .price-housing {
   margin-left: auto;
-  height: 195px;
+  height: 162px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1244,14 +1252,16 @@ input[value="показать"]:focus {
 .result-header,
 .result-search {
 
-  font-size: 22px;
+  font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   text-align: left;
   color: var(--black);
   margin-top: 0;
 }
-
+.result-info{
+  margin-left:-3px;
+}
 .result-info:hover,
 .result-info:focus {
   color: var(--basic-reasons-blue);
@@ -1264,14 +1274,12 @@ input[value="показать"]:focus {
 
 .result-kind-housing {
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .result-price-housing {
-  /*display: flex;*/
-  /*width: 115px;*/
   margin-top: 5px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .result-link {
@@ -1330,7 +1338,8 @@ input[value="показать"]:focus {
   display: flex;
   width: 1200px;
   box-sizing: border-box;
-  padding: 35px 72px;
+  padding: 35px 86px 35px 72px;
+  margin-bottom: -6px;
 }
 
 .result-search {
@@ -1364,7 +1373,6 @@ input[value="показать"]:focus {
   width: 20px;
   align-items: center;
   justify-content: space-between;
-  /* flex-direction: row-reverse; */
   list-style: none;
 }
 
@@ -1377,7 +1385,7 @@ input[value="показать"]:focus {
 .result-search-list {
   display: flex;
   box-sizing: border-box;
-  padding: 30px 72px;
+  padding: 28px 73px;
   border-top: 1px solid var(--line-color);
 
 }
