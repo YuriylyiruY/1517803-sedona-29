@@ -80,7 +80,7 @@ h6 {
   grid-template-columns: 400px 400px 400px;
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 11;
-  margin-top:6px;
+  /* margin-top: 6px; */
 }
 
 .logo {
@@ -219,9 +219,11 @@ button {
   padding: 49px 68px 40px;
 
 }
-.gray-block-add{
+
+.gray-block-add {
   padding: 49px 73px 57px;
 }
+
 .gray-block h3 {
   width: 150px;
   margin: 0 auto;
@@ -261,7 +263,7 @@ button {
 .reasons-description-add {
   width: 301px;
   text-align: center;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 .realy-town {
@@ -270,7 +272,7 @@ button {
   font-weight: 700;
   margin-left: 100px;
   margin-bottom: 35px;
-  margin-top:7px;
+  margin-top: 7px;
   width: 122px;
 }
 
@@ -311,15 +313,15 @@ button {
   text-align: center;
   margin-bottom: 26px;
   margin-top: -4px;
-  margin-left:6px;
+  margin-left: 6px;
 }
 
 .advantages-description {
   padding: 0 56px;
   text-align: center;
   line-height: 1.5;
-  margin-bottom:19px;
-  margin-left:6px;
+  margin-bottom: 19px;
+  margin-left: 6px;
 }
 
 .advantages-description-add {
@@ -377,7 +379,7 @@ button {
   color: var(--basic-letters);
   flex-direction: column;
   line-height: 2;
-  margin-top:-8px;
+  margin-top: -8px;
 }
 
 .appointment-button {
@@ -457,7 +459,7 @@ input[value="24 апреля 2017"] {
 .check-on label {
   width: 100px;
   font-weight: 700;
-  margin-left:4px;
+  margin-left: 4px;
 }
 
 .check-on input {
@@ -546,7 +548,7 @@ input[id="amount-child"] {
 
 .adults label {
   margin-right: auto;
-  margin-left:5px;
+  margin-left: 5px;
 }
 
 .children label {
@@ -620,12 +622,12 @@ input[value="2"]:focus {
   align-items: center;
   width: 50%;
   padding-right: 28px;
-  margin-left:1px;
+  margin-left: 1px;
 }
 
 .children {
   padding-right: 9px;
-  margin-left:-13px;
+  margin-left: -13px;
 }
 
 
@@ -765,7 +767,7 @@ input[value="2"]:focus {
   color: var(--black);
   height: 0px;
   margin-left: 48px;
-  margin-top:-9px;
+  margin-top: -9px;
 }
 
 .social-link {
@@ -777,11 +779,16 @@ input[value="2"]:focus {
 }
 
 .social-link:hover::before,
-.social-link:focus::before {
+.social-link:hover,
+.social-link:focus::before,
+.social-link:focus {
+  background-color: var(--color-blue-blue);
   opacity: 1;
 }
 
-.social-link:active::before {
+.social-link:active::before,
+.social-link:active {
+  background-color: var(--color-blue-blue);
   opacity: 0.5;
 }
 
@@ -811,7 +818,7 @@ input[value="2"]:focus {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url(../img/twitter2.svg);
-  opacity: 0.7;
+  opacity: 1;
   content: "";
 }
 
@@ -824,7 +831,7 @@ input[value="2"]:focus {
   background-image: url(../img/fb-icon.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  opacity: 0.7;
+  opacity: 1;
   content: "";
 }
 
@@ -836,7 +843,7 @@ input[value="2"]:focus {
   background-repeat: no-repeat;
   background-image: url(../img/youtube.svg);
   background-position: 50% 50%;
-  opacity: 0.7;
+  opacity: 1;
   content: "";
 }
 
@@ -884,8 +891,8 @@ input[value="2"]:focus {
   height: 20px;
   width: 150px;
   padding-bottom: 39px;
-  margin-bottom:-17px;
-  margin-left:86px;
+  margin-bottom: -17px;
+  margin-left: 86px;
 }
 
 .phone-block {
@@ -902,7 +909,7 @@ input[value="2"]:focus {
   background-image: url(../img/filter-1.jpg);
   min-height: 200px;
   padding: 20px 72px 0;
-  margin-bottom: -9px;
+
 }
 
 .search-form {
@@ -929,8 +936,8 @@ input#apartment:focus+label {
 }
 
 .infrastructure legend {
-  display:block;
-  margin-bottom:10px;
+  display: block;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 700;
 }
@@ -987,40 +994,42 @@ fieldset {
   flex-direction: column;
   justify-content: space-around;
   color: var(--main-background-color);
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 .kind-of-housing legend {
-  display:block;
+  display: block;
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 700;
+
 }
 
 .price-housing {
   margin-left: auto;
-  height: 162px;
+  height: 178px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   box-sizing: border-box;
+  align-items:flex-end;
 }
 
 .price-housing legend {
   font-size: 16px;
   font-weight: 700;
   width: 317px;
-  margin-top: 7px;
   color: var(--main-background-color);
 }
 
 .price {
-  width: 297px;
+  width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   border: solid 2px var(--main-background-color);
+  box-sizing: border-box;
 }
 
 .price [value],
@@ -1063,13 +1072,13 @@ fieldset {
   align-items: center;
   color: var(--main-background-color);
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 400;
   padding-bottom: 2px;
 }
 
 .toggle {
   height: 34px;
-  width: 297px;
+  width: 100%;
   background-color: transparent;
   position: relative;
 }
@@ -1120,6 +1129,7 @@ input[value="показать"] {
   font-weight: inherit;
   border: solid 2px var(--main-background-color);
   background-color: transparent;
+  margin:0 auto;
 }
 
 .show {
@@ -1201,7 +1211,7 @@ input[value="показать"]:focus {
 .up {
   width: 10px;
   height: 10px;
- background-image: url(../img/icon-up.svg);
+  background-image: url(../img/icon-up.svg);
 }
 
 .up:hover,
@@ -1219,7 +1229,7 @@ input[value="показать"]:focus {
   background-image: url(../img/icon-down-2.svg);
   width: 10px;
   height: 10px;
- margin-left: 10px;
+  margin-left: 10px;
 }
 
 /**/
@@ -1237,15 +1247,15 @@ input[value="показать"]:focus {
 }
 
 .stars-four {
-  width: 75px;
+  width: 96px;
 }
 
 .stars-three {
-  width: 55px;
+  width: 74px;
 }
 
 .stars-two {
-  width: 35px;
+  width: 49px;
 }
 
 .result-info,
@@ -1259,9 +1269,11 @@ input[value="показать"]:focus {
   color: var(--black);
   margin-top: 0;
 }
-.result-info{
-  margin-left:-3px;
+
+.result-info {
+  margin-left: -3px;
 }
+
 .result-info:hover,
 .result-info:focus {
   color: var(--basic-reasons-blue);
@@ -1329,7 +1341,7 @@ input[value="показать"]:focus {
   height: 15px;
   float: left;
   margin-bottom: 16px;
-  margin-left:-74px;
+  margin-left: -74px;
 }
 
 
@@ -1338,8 +1350,8 @@ input[value="показать"]:focus {
   display: flex;
   width: 1200px;
   box-sizing: border-box;
-  padding: 35px 86px 35px 72px;
-  margin-bottom: -6px;
+  padding: 29px 72px;
+
 }
 
 .result-search {
@@ -1370,9 +1382,8 @@ input[value="показать"]:focus {
 .result-searching-arrow {
   display: flex;
   margin-left: auto;
-  width: 20px;
+  width: 33px;
   align-items: center;
-  justify-content: space-between;
   list-style: none;
 }
 
@@ -1385,7 +1396,7 @@ input[value="показать"]:focus {
 .result-search-list {
   display: flex;
   box-sizing: border-box;
-  padding: 28px 73px;
+  padding: 28px 72px;
   border-top: 1px solid var(--line-color);
 
 }
