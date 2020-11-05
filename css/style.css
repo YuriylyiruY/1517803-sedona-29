@@ -58,7 +58,7 @@ h6 {
 .page {
   font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
-  background-color: var(--main-background-color);
+  background-color: var(--basic-background-color);
   color: var(--black);
   font-size: 14px;
   font-weight: 400;
@@ -81,6 +81,9 @@ h6 {
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 11;
   /* margin-top: 6px; */
+  min-height: 120px;
+  padding-top: 24px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -177,7 +180,7 @@ button {
   max-width: 444px;
   line-height: 26px;
   margin: 0 auto;
-  margin-top: 46px;
+  margin-top: 43px;
   margin-bottom: 44px;
   text-align: center;
 }
@@ -227,7 +230,7 @@ button {
 .gray-block h3 {
   width: 150px;
   margin: 0 auto;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 }
 
 .reasons-info {
@@ -257,7 +260,7 @@ button {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  margin-top: -3px;
+  /* margin-top: -3px; */
 }
 
 .reasons-description-add {
@@ -287,7 +290,7 @@ button {
 }
 
 .number {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .advantages-list {
@@ -303,7 +306,7 @@ button {
   padding-top: 160px;
   padding-bottom: 64px;
   box-sizing: border-box;
-  margin-left: -2px;
+  /* margin-left: -2px; */
   font-weight: 700;
 }
 
@@ -322,9 +325,11 @@ button {
   line-height: 1.5;
   margin-bottom: 19px;
   margin-left: 6px;
+  font-weight: 400;
 }
 
 .advantages-description-add {
+  font-weight:700;
   padding: 0 50px;
 }
 
@@ -379,7 +384,7 @@ button {
   color: var(--basic-letters);
   flex-direction: column;
   line-height: 2;
-  margin-top: -8px;
+   margin-top: -6px;
 }
 
 .appointment-button {
@@ -398,7 +403,7 @@ button {
   text-align: center;
 }
 
-.appointment-button:hover {
+.appointment-button:hover,.appointment-button:focus {
   background-color: var(--gray-gray);
 }
 
@@ -480,7 +485,7 @@ input[value="24 апреля 2017"] {
   background-color: transparent;
 }
 
-.calendar:hover path[fill="#A9A9A9"] {
+.calendar:hover path[fill="#A9A9A9"],.calendar:focus path[fill="#A9A9A9"] {
   fill: var(--black);
 }
 
@@ -514,7 +519,7 @@ input[value="24 апреля 2017"] {
 }
 
 .check-in input[value]:active,
-.check-on input:optional:active {
+.check-on input:active {
   background-color: var(--main-background-color);
 
 }
@@ -569,7 +574,7 @@ input[value="2"] {
 
 }
 
-input[value="0"]:hover,
+/* input[value="0"]:hover,
 input[value="2"]:hover {
   background-color: var(--active-button);
   outline: 2px solid transparent;
@@ -605,7 +610,7 @@ input[value="2"]:focus {
 .pic-form-plus:focus {
   background-color: var(--main-background-color);
   border: 3px solid var(--line-color);
-}
+} */
 
 .pic-form-next {
   display: flex;
@@ -798,8 +803,8 @@ input[value="2"]:focus {
   list-style: none;
   display: flex;
   justify-content: center;
-  width: 400px;
-  padding-top: 25px;
+  /* width: 400px; */
+  /* padding-top: 25px; */
 }
 
 .socials-item {
@@ -849,7 +854,7 @@ input[value="2"]:focus {
 
 .copyright-link {
   color: var(--html-academy-color);
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .copyright-link:hover,
@@ -864,25 +869,26 @@ input[value="2"]:focus {
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 121px;
+  /* align-items: center; */
+  /* width: 400px;
+  height: 121px; */
+  padding-top: 1px;
 }
 
 .logo-web {
-  margin-top: -10px;
-  margin-right: 5px;
+  margin-top: 14px;
+  margin-right: 7px;
 }
 
 .contacts {
-  box-sizing: border-box;
-  display: flex;
+  /* box-sizing: border-box; */
+   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 121px;
-  padding-top: 23px;
-  margin-left: -1px;
+  /* width: 400px;
+  height: 121px; */
+  /* padding-top: 23px; */
+   margin-left: -1px;
 }
 
 .hashtag {
@@ -1247,7 +1253,7 @@ input[value="показать"]:focus {
 }
 
 .stars-four {
-  width: 96px;
+  width: 97px;
 }
 
 .stars-three {
@@ -1270,9 +1276,6 @@ input[value="показать"]:focus {
   margin-top: 0;
 }
 
-.result-info {
-  margin-left: -3px;
-}
 
 .result-info:hover,
 .result-info:focus {
@@ -1286,12 +1289,12 @@ input[value="показать"]:focus {
 
 .result-kind-housing {
   margin-top: 5px;
-  margin-bottom: 17px;
+  margin-bottom: 11px;
 }
 
 .result-price-housing {
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .result-link {
@@ -1339,7 +1342,7 @@ input[value="показать"]:focus {
   margin-left: 5px;
   width: 75px;
   height: 15px;
-  float: left;
+  /* float: left; */
   margin-bottom: 16px;
   margin-left: -74px;
 }
@@ -1391,12 +1394,13 @@ input[value="показать"]:focus {
   display: flex;
   width: 1200px;
   flex-direction: column;
+  margin-bottom: 8px;
 }
 
 .result-search-list {
   display: flex;
   box-sizing: border-box;
-  padding: 28px 72px;
+  padding: 30px 72px;
   border-top: 1px solid var(--line-color);
 
 }
