@@ -1026,6 +1026,7 @@ fieldset {
   font-weight: 700;
   width: 317px;
   color: var(--main-background-color);
+  padding-top:9px;
 }
 
 .price {
@@ -1069,6 +1070,7 @@ fieldset {
   align-items: center;
   justify-content: center;
   color: var(--main-background-color);
+  margin-right: 6px;
 }
 
 .letter-sign {
@@ -1077,9 +1079,10 @@ fieldset {
   height: 40px;
   align-items: center;
   color: var(--main-background-color);
-  font-size: 21px;
-  font-weight: 400;
-  padding-bottom: 2px;
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-left:-14px;
 }
 
 .toggle {
@@ -1123,7 +1126,7 @@ fieldset {
 }
 
 .toggle-max {
-  left: 240px;
+  left: 250px;
 }
 
 input[value="показать"] {
