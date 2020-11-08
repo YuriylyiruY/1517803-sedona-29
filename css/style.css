@@ -139,12 +139,15 @@ button {
 .site-nav-link:active {
   color: var(--basic-light-gray);
 }
+
 .site-nav-link-right {
-margin-right: -37px;
+  margin-right: -37px;
 }
+
 .site-nav-link-left {
-margin-left: -35px;
+  margin-left: -35px;
 }
+
 .current,
 .current:hover,
 .current:active {
@@ -587,13 +590,13 @@ input[id="amount-child"] {
 .adults label {
   margin-right: auto;
   margin-left: 5px;
-  margin-bottom:-6px;
+  margin-bottom: -6px;
 }
 
 .children label {
   margin-right: auto;
   margin-left: 46px;
-  margin-bottom:-6px;
+  margin-bottom: -6px;
 }
 
 .pic-form {
@@ -1089,8 +1092,9 @@ fieldset {
   outline: none;
 }
 
-.letter-label {
+.letter-lab {
   margin-left: 20px;
+  margin-top: 4px;
 }
 
 .price span {

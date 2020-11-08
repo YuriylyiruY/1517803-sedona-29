@@ -18,7 +18,8 @@
          <ul class="site-navigation ">
            <li class="site-navigation-item "><a class="site-nav-link" href="#!">Информация</a></li>
            <li class="site-navigation-item"><a class="site-nav-link site-nav-link-left" href="#!">Фото и видео</a></li>
-           <li class="site-navigation-item item-text-write"><a class="site-nav-link site-nav-link-right" href="#!">Карта штата</a></li>
+           <li class="site-navigation-item item-text-write"><a class="site-nav-link site-nav-link-right" href="#!">Карта
+               штата</a></li>
            <li class="site-navigation-item item-text-write"><a class="site-nav-link current">Гостиницы</a></li>
          </ul>
        </nav>
@@ -26,7 +27,7 @@
      <main>
        <section class="search-form-block">
          <h2 class="visually-hidden">Выбор типа жилья</h2>
-         <form class="search-form">
+         <form class="search-form" action="https://echo.htmlacademy.ru/">
            <fieldset class="infrastructure">
              <legend>Инфраструктура</legend>
              <p><input class="search-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked><label
@@ -47,13 +48,14 @@
            </fieldset>
            <fieldset class="price-housing">
              <legend>Стоимость в сутки (р):</legend>
-             <label class="price">
-               <p class="letter"><label class="letter-label">от</label> <input type="text" name="min-price" value="0">
+             <div class="price">
+
+               <p class="letter"><label class="letter-lab">от</label> <input type="text" name="min-price" value="0">
                </p>
                <p class="letter-sign">|</p>
-               <p class="letter"><label class="letter-label">до</label><input type="text" name="max-price" value="3000">
-               </p>
-             </label>
+               <p class="letter"><label class="letter-lab">до</label><input type="text" name="max-price" value="3000">
+             </div>
+
              <div class="toggle">
                <div class="scale">
                  <div class="bar"></div>
@@ -61,7 +63,7 @@
                <div class="toggles toggle-min" tabindex="0"></div>
                <div class="toggles toggle-max" tabindex="0"></div>
              </div>
-             <input class="show" type="submit" href="https://echo.htmlacademy.ru/" value="показать">
+             <input class="show" type="submit" value="показать">
            </fieldset>
          </form>
        </section>
@@ -74,8 +76,8 @@
            <li><a class="sorting-item" href="#">По рейтингу</a></li>
          </ul>
          <ul class="result-searching-arrow">
-           <li><a href="#!" tabindex="-1">
-               <div class="up" tabindex="0"></div>
+           <li><a href="#!">
+               <div class="up"></div>
              </a></li>
            <li><a href="#!">
                <div class="down"></div>
