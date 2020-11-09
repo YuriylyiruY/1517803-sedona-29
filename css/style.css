@@ -24,7 +24,7 @@
   --color-gray-footer: #BDBBBC;
   --color-for-toggle: #ABABAB;
   --color-hotels-brown: #756357;
-
+  --color-scale: rgba(255, 255, 255, 0.3);
 }
 
 .visually-hidden {
@@ -608,7 +608,7 @@ input[value="0"],
 input[value="2"] {
   outline: 3px solid transparent;
   outline-offset: -3px;
-  font-weight: 700;
+  font-weight: 400;
 
 }
 
@@ -800,6 +800,9 @@ input[value="2"]:focus {
   min-height: 593px;
   margin-bottom: -121px;
   z-index: 1;
+  border: 0;
+  width: 1200px;
+  height: 589px;
 }
 
 /*футер*/
@@ -1094,7 +1097,7 @@ fieldset {
 
 .letter-lab {
   margin-left: 20px;
-  margin-top: 4px;
+  /* margin-top: 0; */
 }
 
 .price span {
@@ -1136,7 +1139,8 @@ fieldset {
 
 .scale {
   height: 2px;
-  background-color: var(--black);
+  width: 100%;
+  background: var(--color-scale);
   position: relative;
   top: 10px;
 }
@@ -1145,6 +1149,7 @@ fieldset {
   width: 82%;
   height: 2px;
   background: var(--main-background-color);
+
 }
 
 .toggles {
